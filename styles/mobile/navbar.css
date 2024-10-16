@@ -1,0 +1,124 @@
+/* NAV CONTAINER (MAIN) */
+
+
+.nav_container {
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* background: #111111; */
+}
+
+.navbar_container_sizer {
+  opacity: 0;
+}
+
+.nav {
+
+  display: flex;
+  justify-content: space-between;
+}
+
+  .ico {width: 10vw;}
+
+#logo_img {
+  width: 100%;
+  display: block;
+}
+
+.ico:hover {
+  -webkit-mask-image: none;
+}
+
+.ico {
+  align-content: center;
+}
+
+.ico_img {
+  width: 100%;
+  display: block; 
+}
+
+#main_img_container {
+    background: url("../../media/navbar/webp/main.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#main_img_container:hover {
+    background: url("../../media/navbar/webp/mainhold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#main_img_container_onpage {
+    background: url("../../media/navbar/webp/mainhold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#shop_img_container_onpage {
+    background: url("../../media/navbar/webp/shophold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#music_img_container_onpage {
+    background: url("../../media/navbar/webp/musichold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+  #pointer_main {
+    background-color: blue;
+  }
+
+#phone_img_container {
+    background: url("../../media/navbar/webp/contact.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#phone_img_container:hover {
+    #main_img_container {
+      mask-image: none;
+    }
+    background: url("../../media/navbar/webp/contacthold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#shop_img_container {
+    background: url("../../media/navbar/webp/shop.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#shop_img_container:hover {
+    background: url("../../media/navbar/webp/shophold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#music_img_container {
+    background: url("../../media/navbar/webp/music.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+#music_img_container:hover {
+    background: url("../../media/navbar/webp/musichold.webp") no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+.nav_pointer {
+  width: 10%;
+}
+
+#pointer_main,
+#pointer_phone,
+#pointer_shop,
+#pointer_music {
+  opacity: 0;
+}

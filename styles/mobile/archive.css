@@ -1,0 +1,306 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+.title_container,
+.title_container img {
+  width: 100%;
+}
+
+.container_start {
+  margin-bottom: 20px;
+}
+
+.container_el {
+  margin-bottom: 30px;
+}
+
+.container_el_plus {
+  margin-bottom: 40px;
+}
+
+.container_end {
+  margin-bottom: 50px;
+}
+
+/*                                VASYA                             */
+
+.vasya_afisha_container_link img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.vasya_afisha_container {
+  width: 100%;
+}
+
+.vasya_content_container {
+
+}
+
+/*                             VISITKY                          */
+
+.visitky_container_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visitky_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.visitky_container img {
+  width: 100%;
+}
+
+#visitky_container_container_1 {
+  padding-bottom: 30px;
+}
+
+.visitky_container_container_container {
+
+  /*margin-left: 40px;
+  margin-right: 40px;*/
+  }
+.visitky_container {
+  width: 45%;
+  }
+
+#visitky_art_margin_1 {
+  padding-left: 40px;
+}
+
+
+#visitky_art_margin_2 {
+  padding-right: 40px;
+}
+
+#visitky_zhyvit {
+  opacity: 0;
+}
+
+
+/*                  ANEURYSM                */
+
+
+.aneurysm_showcase_container {
+  display: flex;
+  justify-content: center;
+}
+
+.aneurysm_showcase_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aneurysm_logo_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.aneurysm_victims_container {
+  display: flex;
+  justify-content: center;
+}
+
+#aneurysm_victims_margin {
+  margin-bottom: 40px;
+}
+
+.aneurysm_showcase_element img,
+.aneurysm_logo_element img,
+.aneurysm_victims_flex img {
+  width: 100%;
+}
+
+.aneurysm_showcase_element {
+  height: 33%;
+}
+
+.aneurysm_logo_element {
+  width: 20%;
+}
+
+.aneurysm_victims_flex {
+  width: 90%;
+}
+
+.aneurysm_logo_element img,
+.aneurysm_showcase_element img {
+  width: 100%;
+}
+
+.aneurysm_logo_element {
+  width: 20%;
+}
+
+.aneurysm_showcase_element {
+  height: 33%;
+}
+
+/*                                                 SHTORY                                         */
+
+.shtory_container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.shtory_container_container {
+  display: flex;
+  justify-content: center;
+}
+
+.shtory_flex_link img,
+.shtory_flex_link {
+  width: 100%;
+} 
+
+.shtory_flex {
+  width: 40%;
+}
+
+/*                                              POSLUHAY                                   */
+
+.posluhay_flex {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.posluhay_gif_container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.posluhay_gif_flex img {
+  width: 100%;
+}
+
+.posluhay_gif_flex {
+  width: 70%;
+}
+
+/*                                                 POSHUK                                      */
+
+.poshuk_konyk_container,
+.poshuk_konyk_container img {
+  width: 100%;
+}
+
+.poshuk_container {
+  display: flex;
+  justify-content: center;
+}
+
+.poshuk_flex {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.poshuk_container_flex img {
+  width: 100%;
+}
+
+.poshuk_container_flex {
+  width: 70%;
+}
+
+.poshuk_zine_container_desktop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poshuk_zine_flex img {
+  width: 100%;
+}
+
+.poshuk_zine_flex {
+  height: 50%;
+}
+
+.box_container {
+  display: none;
+}
+
+/*                                            825                                           */
+
+.eight_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eight_flex img {
+  width: 100%;
+}
+
+.eight_flex {
+  width: 20%;
+}
+
+
+
+/*                                        FOOTER                               */
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 30%;
+}

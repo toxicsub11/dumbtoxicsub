@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+        @font-face {
+            font-family: 'Arial';
+            src: url('../font/Arial.woff2') format('woff2');
+        }
+
+p {
+  font-family: Arial;
+  color: white;
+  user-select: none;
+}
+
+#desktop_container {
+  display: none;
+}
+
+.product_container_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.product_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 96%;
+}
+
+.photo_container img {
+  width: 100%;
+}
+
+.photo_container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.info_container_container {
+  width: 100%;
+}
+
+.info_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 728 / 548;
+  width: 100%;
+}
+
+.info_flex_title {
+  width: 100%%;
+}
+
+.info_flex_title img {
+  width: 100%;
+}
+
+.info_flex {
+  
+}
+
+.info_flex p {
+  width: 100%;
+  font-size: 16px;
+}
+
+.info_flex_link img {
+  width: 100%;
+}
+
+.info_flex_ui {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#quote_flex {
+  display: flex;
+  justify-content: end;
+}
+
+#info_flex_ui {
+  width: 40%;
+}
+
+.margin_flex {
+  margin-bottom: 30px;
+}
+
+#big_margin_flex {
+  margin-bottom: 40px;
+}
+
+#mid_font {
+  font-size: 24px;
+}
+
+#big_font {
+  font-size: 36px;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 30%;
+}

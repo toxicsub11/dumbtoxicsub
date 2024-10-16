@@ -1,0 +1,350 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+.title_container,
+.title_container img {
+  width: 100%;
+}
+
+.container_start {
+  margin-bottom: 30px;
+}
+
+.container_el {
+  margin-bottom: 40px;
+}
+
+.container_el_plus {
+  margin-bottom: 50px;
+}
+
+.container_end {
+  margin-bottom: 70px;
+}
+
+/*                                VASYA                             */
+
+.vasya_afisha_container_link img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.vasya_afisha_container {
+  width: 100%;
+}
+
+/*                             VISITKY                          */
+
+.visitky_container_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visitky_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.visitky_container img {
+  width: 100%;
+}
+
+#visitky_container_container_1 {
+  padding-bottom: 30px;
+}
+
+.visitky_container_container_container {
+
+  }
+
+.visitky_container {
+  width: 40%;
+  }
+
+#visitky_zhyvit {
+  opacity: 0;
+}
+
+
+#visitky_art_margin_1 {
+  padding-left: 200px;
+}
+
+
+#visitky_art_margin_2 {
+  padding-right: 200px;
+}
+
+
+/*                  ANEURYSM                */
+
+
+.aneurysm_showcase_container {
+  display: flex;
+  justify-content: end;
+  display: none;
+}
+
+#aneurysm_victims_margin {
+  margin-bottom: 80px;
+}
+
+.aneurysm_showcase_flex {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 3%;
+}
+
+.aneurysm_logo_flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.aneurysm_victims_container {
+  display: flex;
+  justify-content: center;
+}
+
+.aneurysm_showcase_element img,
+.aneurysm_logo_element img,
+.aneurysm_victims_flex img {
+  width: 100%;
+}
+
+.aneurysm_showcase_element {
+  height: 33%;
+}
+
+.aneurysm_logo_element {
+  width: 20%;
+}
+
+.aneurysm_victims_flex {
+  width: 90%;
+}
+
+/*                                                 SHTORY                                         */
+
+.shtory_container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.shtory_container_container {
+  display: flex;
+  justify-content: center;
+}
+
+.shtory_flex_link img,
+.shtory_flex_link {
+  width: 100%;
+} 
+
+.shtory_flex {
+  width: 45%;
+}
+
+/*                                                 POSHUK                                      */
+
+.poshuk_konyk_container,
+.poshuk_konyk_container img {
+  width: 100%;
+}
+
+.poshuk_container {
+  display: flex;
+  justify-content: center;
+}
+
+.poshuk_flex {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.poshuk_container_flex img {
+  width: 100%;
+}
+
+.poshuk_container_flex {
+  width: 70%;
+}
+
+.poshuk_zine_container_desktop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poshuk_zine_flex img {
+  width: 100%;
+}
+
+.poshuk_zine_flex {
+  height: 50%;
+}
+
+/*                                              POSLUHAY                                   */
+
+.posluhay_container {
+
+}
+
+.posluhay_flex {
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.posluhay_flex_element img {
+  width: 100%;
+}
+
+.posluhay_flex_element {
+  width: 70%;
+}
+
+.posluhay_gif_container {
+  display: flex;
+  justify-content: center;
+}
+
+.posluhay_gif_flex_link img {
+  width: 100%;
+}
+
+.posluhay_gif_flex_link {
+  width: 100%;
+}
+
+.posluhay_gif_flex {
+  width: 70%;
+}
+
+.cursor_switch:hover {
+  cursor: url('../cursor/blue_size56.png') 16 16, auto;
+}
+
+/*                                            825                                           */
+
+.eight_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eight_flex img {
+  width: 100%;
+}
+
+.eight_flex {
+  width: 20%;
+}
+
+/*                                             BOX ANIM                                    */
+
+.box_container {
+  width: 100vw;
+  overflow-x: hidden;
+  display: none;
+}
+
+.box_flex_el img {
+  width: 80%;
+}
+
+.box_flex_el {
+  margin-right: 200px;
+}
+
+.box_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.box_flex_container {
+  width: 300vw;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#box_flex_1,
+#box_flex_2 {
+  animation: ticker 5s infinite linear forwards;
+}
+
+@keyframes ticker {
+
+  0% {
+    transform: translate(-100%, 0);
+  }
+
+  100% {
+    transform: translate(0%, 0);
+  }
+
+}
+
+/*                                        FOOTER                               */
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 20%;
+}
+

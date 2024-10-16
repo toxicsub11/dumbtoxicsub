@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+        @font-face {
+            font-family: 'Arial';
+            src: url('../font/Arial.woff2') format('woff2');
+        }
+
+        .side_menu {
+display: none;
+        }
+
+.instock_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.instock_container a {
+  user-select: none;
+  font-family: Arial;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 10px 0;
+}
+
+        .instock_container a:hover {
+            text-decoration: underline;
+        }
+
+.table_container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#table_container_start {
+  margin-top: 30px;
+}
+
+#table_container_end {
+  margin-bottom: 30px;
+}
+
+.table_holder {
+  display: flex;
+  justify-content: center;
+}
+
+.table_flex_link img {
+  width: 100%;
+}
+
+.table_flex {
+  width: 50%;
+}
+
+.table_flex_wide {
+  width: 80%;
+}
+
+#table_flex_rand_3 {
+  width: 30%;
+}
+
+#table_flex_rand_5 {
+  width: 20%;
+}
+
+.gif_contain_el_img {
+  opacity: 0;
+}
+
+#table_flex_zine {
+  background-image: url("../../media/shop/content/zine.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#table_flex_zine:hover {
+  background-image: url("../../media/shop/content/zine_gif.gif");
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center;
+}
+
+#table_flex_tape {
+  width: 40%;
+  background-image: url("../../media/shop/content/tape.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 30%;
+}

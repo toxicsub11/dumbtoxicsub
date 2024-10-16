@@ -1,0 +1,238 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+.title_container,
+.title_container img {
+  width: 100%;
+}
+
+.container_start {
+  margin-bottom: 40px;
+}
+
+.container_el {
+  margin-bottom: 40px;
+}
+
+.container_el_plus {
+  margin-bottom: 50px;
+}
+
+.container_end {
+  margin-bottom: 80px;
+}
+
+.kylym_container {
+  width: 800vw;
+  display: inline-flex;
+  margin: 0;
+}
+
+.kylym_container_container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#kylym_running_container_content img {
+  width: 8%;
+}
+
+.kylym_running_container {
+  height: 100%;
+}
+
+.kylym_running_container_content1 img,
+.kylym_running_container_content2 img{
+  animation: poster 20s infinite linear forwards;
+  animation-play-state: paused;
+}
+
+@keyframes poster {
+  0% {
+    transform: translate(-43%, 0);
+  }
+
+  100% {
+    transform: translate(-345%, 0);
+  }
+}
+
+.comp_img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0; 
+}
+
+.comp {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  border: none;
+}
+
+  .comp {
+          width: 45%;
+          padding: 75px;
+          padding-top: 90px;
+          padding-top: 90px;}
+
+  .kylymtype_img {width: 30%;}
+  .kylymtype_container {margin-left: 60vw;}
+
+.kylymtype_container {
+  display: inline;
+  opacity: 0;
+}
+
+.kylymtype {
+  display: inline;
+}
+
+.kylymtype_img {
+  height: auto;
+}
+
+  .container_kylym {
+  background: url(../../media/main/bg/bg5.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+  .margin_after_comp {
+  margin-bottom: 15px;
+  }
+#before_comp {
+  margin-bottom: 5px;
+  }
+
+#kylym_posters_afisha {
+  padding-top: 30px;
+}
+
+.kylym_bio_posters {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.kylym_bio_posters_img {
+  width: 100%;
+}
+
+.kylym_bio_link {
+  width: 30%;
+}
+
+  #kylym_bio_posters_img_1 {
+  margin-right: 50px;
+  }
+    #kylym_bio_posters_img_2 {
+  }
+
+.kylym_bio_posters {
+  background: url("../../media/main/bg/brickwall.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.kylym_bio_posters {
+  background-size: 30%;
+}
+
+.kylym_photo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.kylym_photo_flex img {
+  width: 100%;
+}
+
+.kylym_photo_flex {
+  width: 100%;
+}
+
+.kylym_video_container {
+  display: flex;
+  justify-content: center;
+}
+
+.kylym_cloth_anim_el img,
+.kylym_cloth_anim_el {
+  width: 100%;
+}
+
+#kylym_graphic_el {
+  width: 50%;
+}
+
+/*                                        FOOTER                               */
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 20%;
+}
+
+.cursor_switch:hover {
+  cursor: url('../cursor/blue_size56.png') 16 16, auto;
+}

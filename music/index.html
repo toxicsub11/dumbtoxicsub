@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link
+  rel="stylesheet"
+  href="../styles/mobile/music.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/music.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/mobile/navbar.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/navbar.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/table_animation_main.css" />
+
+    <title>dumbtoxicsub</title>
+    <link rel="icon" type="image/svg" href="favicon.svg"/>
+
+      <script type="text/javascript">
+  function getPageInfo() {
+
+    var on_target_page = 1;
+    var pointer;
+
+    if ((on_target_page === 1)) {
+      pointer = '<img src="../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
+    }
+
+    if ((on_target_page === 0)) {
+      pointer = '<img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
+    }
+    return pointer;
+  }
+      </script>
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+<style>
+     img,
+     a {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+</style>
+
+
+  </head>
+  <body>
+
+<div class="video-background">
+  <a href="https://www.youtube.com/watch?v=2jCoZgl6OQA" target="_blank" rel="noopener noreferrer" class="cursor_switch" >
+    <video autoplay loop muted playsinline>
+        <source src="../media/music/shtory.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+  </a>
+</div>
+
+<div class="screen_flex_container">
+  
+      <div class="nav_container">
+        <div class="nav" id="nav">
+          <a class="ico cursor_switch" id="main_img_container" href="../portfolio/">
+            <img src="../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
+
+          <a class="ico cursor_switch" id="phone_img_container" href="../portfolio/#contact">
+            <!-- <img src="../media/ico/contact.png" alt="contact" class="ico_img" id="phone_img"> -->
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
+
+          <a class="ico cursor_switch" id="shop_img_container" href="../shop/">
+            <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
+          </a>
+
+          <script type="text/javascript">
+              document.write(getPageInfo());
+          </script>
+
+          <a class="ico cursor_switch" id="music_img_container_onpage" href="#">
+            <!-- <img src="../media/ico/music.png" alt="logo" class="ico_img" id="music_img"> -->
+          </a>
+
+<script type="text/javascript" src="../script/pointer.js"></script>
+<script type="text/javascript">
+  setupHoverEffect('music_img_container_onpage', 'pointer_music');
+</script>
+
+        </div>
+      </div>
+
+<audio id="background-music" autoplay muted loop>
+  <source src="../media/music/kvity.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="sound_container">
+  <button id="sound-toggle" class="cursor_switch">
+      <img src="../media/music/play.jpg" alt="Toggle Sound" width="15%">
+  </button>
+</div>
+
+<script type="text/javascript" src="../script/music_toggle.js"></script>
+
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../media/main/footer/cc.webp"> 
+          </div>  
+
+        </div>
+
+</div>
+
+<!--<div class="kvity_container">
+  <div class="kvity_flex">
+      <img src="../media/music/kvity.gif">
+  </div>
+</div>-->
+
+  </body>
+
+    <footer>
+
+    </footer>
+
+</html>

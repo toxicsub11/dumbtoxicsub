@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link
+  rel="stylesheet"
+  href="../styles/mobile/main.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/main.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/mobile/navbar.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/navbar.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/table_animation_main.css" />
+
+    <title>dumbtoxicsub</title>
+    <link rel="icon" type="image/svg" href="favicon.svg"/>
+
+    <script type="text/javascript" src="../script/chuvaky_grid.js">chuvakyGridMaker();</script>
+
+      <script type="text/javascript">
+  function getPageInfo() {
+
+    var on_target_page = 0;
+    var pointer;
+
+    if ((on_target_page === 1)) {
+      pointer = '<img src="../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
+    }
+
+    if ((on_target_page === 0)) {
+      pointer = '<img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
+    }
+    return pointer;
+  }
+      </script>
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+<style>
+     img,
+     a {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+</style>
+
+      <div class="nav_container">
+        <div class="nav" id="nav">
+          <a class="ico cursor_switch" id="main_img_container_onpage" href="#">
+            <img src="../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
+
+          <a class="ico cursor_switch" id="phone_img_container" href="#contact">
+            <!-- <img src="../media/ico/contact.png" alt="contact" class="ico_img" id="phone_img"> -->
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
+
+          <a class="ico cursor_switch" id="shop_img_container" href="../shop/">
+            <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
+          </a>
+
+          <script type="text/javascript">
+              document.write(getPageInfo());
+          </script>
+
+          <a class="ico cursor_switch" id="music_img_container" href="../music/">
+            <!-- <img src="../media/ico/music.png" alt="logo" class="ico_img" id="music_img"> -->
+          </a>
+
+<script type="text/javascript" src="../script/pointer.js"></script>
+<script type="text/javascript">
+  setupHoverEffect('main_img_container_onpage', 'pointer_main');
+</script>
+
+        </div>
+      </div>
+
+    <div class="side_menu" id="sideMenu">
+        <a href="#proza_nav">ПРОЗА</a>
+        <a href="#kylym_nav">КИЛИМ</a>
+        <a href="#chuvaky_nav">ЧУВАКИ</a>
+        <a href="#afishy_nav">АФІШІ</a>
+        <a href="#digitalwar_nav">DIGITALWAR</a>
+        <a href="#shtory_nav">ШТОРИ</a>
+    </div>
+
+<!--<link rel="preload" href="media/content/kylymbio/1.gif" as="image">
+<link rel="preload" href="media/content/kylymbio/2.gif" as="image">-->
+
+<link rel="preload" href="../media/main/content/heyworld/pink_comp_comp.gif" as="image">
+<link rel="preload" href="../media/main/comissions_table_borderless_comp.svg" as="image">
+<link rel="preload" href="../media/main/content/sign/sign6_comp.webp" as="image">
+<link rel="preload" href="../media/main/bg/bg4_res.png" as="image">
+
+<link rel="preload" href="../script/chuvaky_grid.js" as="script">
+<link rel="preload" href="../script/contact_text.js" as="script" crossorigin="anonymous">
+<link rel="preload" href="../script/gif_sync.js" as="script">
+<link rel="preload" href="../script/pointer.js" as="script">
+<link rel="preload" href="../script/pointer_invert.js" as="script">
+
+<link rel="preload" href="../styles/table_animation_main.css" as="stylesheet">
+
+  </head>
+  <body>
+
+    <header class="header" id="header">
+
+      <div class="heyworld">
+        <img src="../media/main/content/heyworld/pink_comp_comp.gif" alt="hey world">
+      </div>
+
+    <div class="table_container_container">
+      <div class="table_container">
+        <div class="table_content_1" id="table">
+          <img src="../media/main/comissions_table_borderless_comp.svg" alt="open for comissions">
+          <img src="../media/main/comissions_table_borderless_comp.svg" alt="open for comissions">
+        </div>
+        <div class="table_content_2" id="table">
+          <img src="../media/main/comissions_table_borderless_comp.svg" alt="open for comissions">
+          <img src="../media/main/comissions_table_borderless_comp.svg" alt="open for comissions">
+        </div>
+      </div>
+    </div>
+
+    <div class="sign_container">
+      <div class="sign_content">
+        <img src="../media/main/content/sign/sign6_comp.webp" class="sign_img" alt="arrow sign">
+        <img src="../media/main/content/sign/sign6_comp.webp" class="sign_img" alt="arrow sign">
+        <img src="../media/main/content/sign/sign6_comp.webp" class="sign_img" alt="arrow sign">
+      </div>
+    </div>
+
+<div class="proza_zine_container_container" id="proza_nav">
+<div class="proza_zine_container">
+  <a href="../shop/proza/" rel="noopener noreferrer" class="proza_zine_container_link cursor_switch">
+      <div class="proza_zine_placeholder"></div>
+  </a>
+</div>
+</div>
+
+</header>
+
+        <div class="kraplya_text_container_kylym">
+          <a href="../shop/proza/" rel="noopener noreferrer" class="kraplya_text_kylym_link cursor_switch">
+            <img src="../media/main/content/text/webp/proza24.webp" class="kraplya_text_kylym" alt="kylym case link">
+          </a>
+        </div>
+
+<div class="proza_exhb_container">
+  <div class="proza_exhb_flex">
+    <a href="https://www.instagram.com/flowerbed.gallery/" class="proza_exhb_flex_link cursor_switch" target="_blank" rel="noopener noreferrer">
+          <img src="../media/main/content/proza_afisha.gif">
+    </a>
+  </div>
+</div>
+
+<div class="container_container_kylym" id="kylym_nav">
+      
+      <div class="kylym_container_container">
+      <div class="kylym_container">
+
+      <div class="kylym_running_container a_none">
+        <a class="kylym_running_container_content1 cursor_switch" id="kylym_running_container_content" href="kylym/" rel="noopener noreferrer">
+            <img src="../media/main/content/kylymposter/1.jpg" alt="poster" id="poster_img">
+            <img src="../media/main/content/kylymposter/2.jpg" alt="poster" id="poster_img">
+            <img src="../media/main/content/kylymposter/3.jpg" alt="poster" id="poster_img">
+        </a>
+
+        <a class="kylym_running_container_content2 cursor_switch" id="kylym_running_container_content" href="kylym/" rel="noopener noreferrer">
+            <img src="../media/main/content/kylymposter/1.jpg" alt="poster" id="poster_img">
+            <img src="../media/main/content/kylymposter/2.jpg" alt="poster" id="poster_img">
+            <img src="../media/main/content/kylymposter/3.jpg" alt="poster" id="poster_img">
+        </a>
+      </div>
+      </div>
+    </div>
+
+      <script type="text/javascript">
+
+window.addEventListener('load', function() {
+  // запуск анімашкі постера після загрузки всіх елементів сторінки
+  document.querySelectorAll('.kylym_running_container img').forEach(img => {
+    img.style.animation = 'poster 20s infinite linear forwards';
+  });
+});
+
+      </script>
+
+      </div>
+
+<script type="text/javascript" src="../script/gif_sync.js"></script>
+
+<div class="margin_after_comp" id="before_comp"></div>
+
+<div class="container_kylym">
+
+      <div class="comp">
+
+
+        <img src="../media/main/content/comp/full/full_comp_2.gif" class="comp_img" alt="comparison" loading="lazy">
+
+
+      </div>
+
+</div>
+
+    <div class="margin_after_comp"></div>
+
+    <div class="kylym_bio_posters">
+      <img src="../media/main/content/kylymbio/1.gif" class="kylym_bio_posters_img" id="kylym_bio_posters_img_1" alt="bio poster"> 
+      <img src="../media/main/content/kylymbio/2.gif" class="kylym_bio_posters_img" id="kylym_bio_posters_img_2" alt="bio poster">
+    </div>
+
+    <script type="text/javascript" src="../script/gif_sync.js"></script>
+
+    <div class="typo_container" id="kylym">
+      <!--<img src="../media/main/content/typo/kylymwall.png">-->
+      <img src="../media/kylym/title.png">
+    </div>  
+
+        <div class="kraplya_text_container_kylym">
+          <a href="kylym/" rel="noopener noreferrer" class="kraplya_text_kylym_link cursor_switch">
+            <img src="../media/main/content/text/webp/kylym24.webp" class="kraplya_text_kylym" alt="kylym case link">
+          </a>
+        </div>
+
+
+
+      <div class="container_chuvaky" id="chuvaky_nav">
+
+    <div ><div class="sign_container" id="chuvaky_sign_container">
+      <div class="sign_content">
+        <img src="../media/main/content/sign/chuvaky/sign1.webp" class="sign_img" alt="chuvaky sign">
+        <img src="../media/main/content/sign/chuvaky/sign2.webp" class="sign_img" alt="chuvaky sign">
+        <img src="../media/main/content/sign/chuvaky/sign3.webp" class="sign_img" alt="chuvaky sign">
+      </div>
+    </div></div>
+
+        <div id="chuvaky_container"></div>
+
+      <script type="text/javascript" src="../script/chuvaky_grid.js">
+        chuvakyGridMaker();
+      </script>
+
+<div class="chuvaky_links_container">
+
+        <div class="font_download_container a_none">
+          <a href="../downloads/main/Chuvaky_Regular.ttf" download class="font_download_link_container cursor_switch">
+            <img src="../media/main/content/chuvaky/font/file.webp" class="font_download_link_img" alt="font download">
+          </a>
+        </div>
+
+        <div class="font_download_container a_none" id="chuvaky_ico">
+          <a href="https://www.youtube.com/@tochuvaky" target="_blank" rel="noopener noreferrer" class="font_download_link_container cursor_switch">
+            <img src="../media/main/content/chuvaky/font/chuvaky.webp" class="font_download_link_img" alt="chuvaky youtube">
+          </a>
+        </div>
+
+        <div class="font_download_container a_none">
+          <a href="https://youtu.be/SqsXu7z0iM0?si=9B1mSicVftd6n6xX" target="_blank" rel="noopener noreferrer" class="font_download_link_container cursor_switch">
+            <img src="../media/main/content/chuvaky/font/bitok.webp" class="font_download_link_img" alt="watch bitok">
+          </a>
+        </div>
+
+</div>
+
+      </div>
+
+<div class="digitalwar_bg">
+
+<div class="chuvaky_portraits_container" id="chuvaky">
+  <img src="../media/main/bg/bg24.png" class="chuvaky_portraits_img">
+</div>
+
+        <div class="kraplya_text_container_chuvaky" id="kraplya_text_container_no_margin">
+          <a href="chuvaky/" rel="noopener noreferrer" class="kraplya_text_chuvaky_link cursor_switch">
+            <img src="../media/main/content/text/webp/chuvaky24.webp" class="kraplya_text_chuvaky" alt="chuvaky case link">
+          </a>
+        </div>
+
+<div class="afishy_bg_container_container_container">
+<div class="afishy_bg_container_container">
+  <div class="afishy_bg_container">
+  <div class="afishy_container_container" id="afishy_nav">
+    <div class="afishy_container a_none" id="afishy_container_1">
+
+      <a href="https://www.instagram.com/p/C8AS612sc6t/" target="_blank" rel="noopener noreferrer" class="afisha_link_container cursor_switch" id="afisha_link_container_1">
+        <img src="../media/main/content/afishy/kylym_lq.jpg" class="afisha_link_img" alt="bitok poster">
+      </a>
+      <a href="https://www.instagram.com/p/C8B9GAyMv2_" target="_blank" rel="noopener noreferrer" class="afisha_link_container cursor_switch" id="afisha_link_container_1">
+        <img src="../media/main/content/afishy/bitok_lq.jpg" class="afisha_link_img" alt="bitok poster">
+      </a>
+      <a class="afisha_link_container">
+        <img src="../media/main/content/afishy/vlksm_lq.jpg" class="afisha_link_img" alt="vlksm poster">
+      </a>
+
+    </div>
+
+    <div class="afishy_container a_none" id="afishy_container_2">
+
+      <a class="afisha_link_container" id="afisha_link_container_2">
+        <img src="../media/main/content/afishy/vlksm_lq.jpg" class="afisha_link_img" alt="vlksm poster">
+      </a>
+      <a href="https://www.instagram.com/p/C8B9GAyMv2_" target="_blank" rel="noopener noreferrer" class="afisha_link_container cursor_switch" id="afisha_link_container_1">
+        <img src="../media/main/content/afishy/bitok_lq.jpg" class="afisha_link_img" alt="bitok poster">
+      </a>
+      <a href="https://www.instagram.com/p/C8AS612sc6t/" target="_blank" rel="noopener noreferrer" class="afisha_link_container cursor_switch">
+        <img src="../media/main/content/afishy/kylym_lq.jpg" class="afisha_link_img" alt="bitok poster">
+      </a>
+
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+  <div class="digitalwar_container_container" id="digitalwar_bg">
+    <div class="digitalwar_container a_none" id="digitalwar_nav">
+      <a href="https://open.spotify.com/album/0JXAQd5IWh0ghslgBhI0DB?si=x8pliT4LTaSHTi0tQ7dm3g" target="_blank" rel="noopener noreferrer" class="cursor_switch">
+          <img src="../media/main/content/digitalwar/mockup4clear.webp" class="digitalwar_container_img">
+      </a>
+    </div>
+  </div>
+
+        <div class="kraplya_text_container_chuvaky" id="kraplya_text_container_digitalwar_no_margin">
+          <a href="https://open.spotify.com/album/0JXAQd5IWh0ghslgBhI0DB?si=x8pliT4LTaSHTi0tQ7dm3g" target="_blank" rel="noopener noreferrer" class="kraplya_text_chuvaky_link cursor_switch">
+            <img src="../media/main/content/text/webp/digitalwar.webp" class="kraplya_text_chuvaky" alt="chuvaky case link">
+          </a>
+        </div>
+
+</div>
+
+<div class="shtory_container_container" id="shtory_nav">
+
+  <div class="shtory_flex" id="stopElement">
+    <div class="shtory_container">
+      <a href="https://www.youtube.com/watch?v=2jCoZgl6OQA" target="_blank" rel="noopener noreferrer" class="shtory_container_link cursor_switch">
+          <img src="../media/main/content/shtory/shtory.gif" loading="lazy">
+      </a>
+    </div>
+  </div>
+
+        <div class="kraplya_text_container_chuvaky" id="kraplya_text_container_shtory_no_margin">
+          <a href="https://www.youtube.com/watch?v=2jCoZgl6OQA" target="_blank" rel="noopener noreferrer" class="kraplya_text_chuvaky_link cursor_switch">
+            <img src="../media/main/content/text/webp/shtory24.webp" class="kraplya_text_chuvaky" alt="chuvaky case link">
+          </a>
+        </div>
+
+<script type="text/javascript" defer src="../script/menu_scroll.js"></script>
+
+</div>
+
+<div id="archived">
+  <div class="pen_text_container" id="pen_text_set">
+    <div class="pen_text_flex a_none" id="pen_text_flex_set">
+        <a href="archive/" rel="noopener noreferrer" class="pen_text_flex cursor_switch" id="pen_text_flex_set">
+            <img src="../media/main/content/text/pen/works_past.png">
+        </a>
+    </div>
+  </div>
+</div>
+
+<div class="contact_links_container" id="contact">
+
+        <div class="contact_ico_container a_none" id="contact_ico_link_img_inst">
+          <a href="https://www.instagram.com/dumbtoxicsub/" target="_blank" rel="noopener noreferrer" class="contact_ico_link_container cursor_switch">
+            <img src="../media/main/contact/webp/hold/inst_hold.webp" class="contact_ico_link_img" alt="inst">
+          </a>
+        </div>
+
+        <div class="contact_ico_container a_none" id="contact_ico_link_img_tel">
+          <a href="tel:+380950822072" class="contact_ico_link_container">
+            <img src="../media/main/contact/webp/hold/contact_hold.webp" class="contact_ico_link_img cursor_switch" alt="call">
+          </a>
+        </div>
+
+        <div class="contact_ico_container a_none" id="contact_ico_link_img_tg">
+          <a href="https://www.t.me/toxicsub" target="_blank" rel="noopener noreferrer" class="contact_ico_link_container cursor_switch">
+            <img src="../media/main/contact/webp/hold/tg_border_hold.webp" class="contact_ico_link_img" alt="tg">
+          </a>
+        </div>
+
+        <div class="contact_ico_container a_none" id="contact_ico_link_img_mail">
+          <a href="mailto:dumbtoxicsub@gmail.com" target="_blank" rel="noopener noreferrer" class="contact_ico_link_container cursor_switch">
+            <img src="../media/main/contact/webp/hold/mail_hold.webp" class="contact_ico_link_img" alt="mail">
+          </a>
+        </div>
+
+</div>
+
+<div class="contact_text_container">
+
+        <div class="contact_text" id="contact_text_mail">
+          <img src="../media/main/contact/text/mail.png" class="contact_text_img" id="contact_text_mail_img">
+        </div>
+
+</div>
+
+<script type="module" src="../script/contact_text.js"></script>
+
+<div class="cv_container_container">
+
+  <div class="cv_container a_none" id="cv_container_text">
+    <a href="../downloads/main/cv.pdf" download class="cv_container_link cursor_switch">
+      <img src="../media/main/contact/text/cv.png" class="cv_container_img">
+    </a>
+  </div>
+
+  <div class="cv_container" id="cv_container_gif">
+      <img src="../media/main/contact/text/glazik.gif" class="cv_container_img">
+  </div>
+
+  <div class="interactive_cv_container" id="cv_container_gif">
+      <img src="../media/main/contact/text/glazik.gif" class="cv_container_img">
+  </div>
+  <div class="interactive_cv_container" id="cv_container_gif">
+      <img src="../media/main/contact/text/glazik.gif" class="cv_container_img">
+  </div>
+
+</div>
+
+      </div>
+      </div>
+
+
+  </body>
+
+    <footer>
+
+      <!--<div class="footer_container" id="footer_notes_container">
+        <div class="footer_notes_flex">
+            <img src="media/footer/notes_bw.webp">
+        </div>
+      </div>-->
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../media/main/footer/cc.webp"> 
+          </div>  
+
+        </div>
+
+    </footer>
+
+</html>

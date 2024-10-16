@@ -1,0 +1,287 @@
+html {
+  box-sizing: border-box;
+}
+
+html{
+}
+
+*,
+*::after,
+*::before{
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #000000;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+header {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+    line-height: 0; 
+    font-size: 0;
+    color: transparent;
+}
+
+a img {
+  user-select: none;
+}
+
+.title_container,
+.title_container img {
+  width: 100%;
+}
+
+.container_start {
+  margin-bottom: 30px;
+}
+
+.container_el {
+  margin-bottom: 30px;
+}
+
+.container_el_plus {
+  margin-bottom: 40px;
+}
+
+.container_end {
+  margin-bottom: 50px;
+}
+
+/*                                           FONT                                     */
+
+        @font-face {
+            font-family: 'Chuvaky';
+            src: url('../font/Chuvaky_Regular.woff2') format('woff2');
+        }
+
+        .chuvaky_font_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+        }
+
+        .font-preview {
+
+            font-family: 'Chuvaky', sans-serif;
+            color: white;
+            /*width: 80%;*/
+            text-align: center;
+            outline: none;
+        }
+
+  .font-preview {
+    font-size: 48px;
+  }
+
+        .font-preview[contenteditable="true"] {
+            border: none;
+            background: none;
+        }
+
+/*                                               SIGN                               */
+
+.sign_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign_container {
+  padding: 50px;
+}
+
+.sign_container_2 {
+  padding: 25px;
+}
+
+  .sign_container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #chuvaky_sign_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .sign_img {
+    width: 20%;
+  }
+  .sign_img_2 {
+    width: 10%;
+  }
+
+/*                                          CHUVAKY                               */
+
+.chuvaky_container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+  .chuvaky_gif_link img {
+    width: 50vw;
+  }
+
+
+.chuvaky_gif_link,
+.chuvaky_gif_link_1,
+.chuvaky_gif_link_2 {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.chuvaky_video_container {
+  width: 100vw;
+  padding-bottom: 50px;
+}
+
+.chuvaky_video_container img {
+  width: 100%;
+}
+
+.chuvaky_links_container {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.font_download_container {
+  height: auto;
+  z-index: 10;
+}
+
+.font_download_container_inh {
+  /*margin-left: 60px;*/
+  z-index: 1;
+}
+
+.font_download_container_inh {
+  opacity: 0;
+  }
+
+.chuvaky_portraits_container,
+.chuvaky_portraits_container img {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.chuvaky_portraits_container {
+  margin-bottom: 50px;
+}
+
+.zirka_container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-left: 60px;
+}
+
+.font_download_link_container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.font_download_link_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kraplya_text_container_chuvaky {
+  margin-bottom: 50px;
+}
+
+.kraplya_text_container_chuvaky {
+  width: 40%;
+  margin-left: 60%;
+  }
+
+#chuvaky_ico {
+  margin-right: 0;
+  margin-left: 0;
+  }
+.font_download_container {
+  width: 20%;
+  }
+.chuvaky_links_container {
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*                                            CREDITS                               */
+
+.credits_container {
+  margin-bottom: 0px;
+
+}
+
+.credits_container {
+  width: 100%;
+  aspect-ratio: 720 / 288;
+  background-image: url('../../media/chuvaky/mob_credits_crop.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+/*                                            AFISHA                                  */
+
+.shtory_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.shtory_container_container {
+  display: flex;
+  justify-content: center;
+}
+
+.shtory_flex_link img,
+.shtory_flex_link {
+  width: 100%;
+} 
+
+.shtory_flex {
+  width: 70%;
+}
+
+/*                                        FOOTER                               */
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: end;
+}
+
+.footer_flex img {
+  width: 100%;
+}
+
+.footer_flex {
+  width: 30%;
+}

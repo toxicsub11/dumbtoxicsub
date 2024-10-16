@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=20.0, user-scalable=yes"/>
+
+    <link
+  rel="stylesheet"
+  href="../../styles/mobile/chuvaky.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../../styles/desktop/chuvaky.css"
+  media="screen and (min-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../../styles/mobile/navbar.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../../styles/desktop/navbar.css"
+  media="screen and (min-width: 992px)" />
+
+    <title>dumbtoxicsub</title>
+    <link rel="icon" type="image/svg" href="favicon.svg"/>
+
+          <script type="text/javascript">
+  function getPageInfo() {
+
+    var on_target_page = 0;
+    var pointer;
+
+    if ((on_target_page === 1)) {
+      pointer = '<img src="../../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
+    }
+
+    if ((on_target_page === 0)) {
+      pointer = '<img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
+    }
+    return pointer;
+  }
+      </script>
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+<style>
+     img {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+</style>
+
+      <div class="nav_container">
+        <div class="nav" id="nav">
+          <a class="ico cursor_switch" id="main_img_container" href="../#chuvaky">
+            <img src="../../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
+          </a>
+
+          <img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
+
+          <a class="ico cursor_switch" id="phone_img_container" href="../main/#contact">
+            <!-- <img src="../media/ico/contact.png" alt="contact" class="ico_img" id="phone_img"> -->
+          </a>
+
+          <img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
+
+          <a class="ico cursor_switch" id="shop_img_container" href="../../shop">
+            <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
+          </a>
+
+          <script type="text/javascript">
+              document.write(getPageInfo());
+          </script>
+
+          <a class="ico cursor_switch" id="music_img_container" href="../../music">
+            <!-- <img src="../media/ico/music.png" alt="logo" class="ico_img" id="music_img"> -->
+          </a>
+
+        </div>
+      </div>
+
+  <link rel="preload" href="../../script/chuvaky_grid_case.js" as="script">
+
+  </head>
+
+  <body>
+
+<div class="title_container container_start">
+    <img src="../../media/chuvaky/title.png">
+</div>
+
+      <div class="container_chuvaky">
+
+    <div id="chuvaky"><div class="sign_container" id="chuvaky_sign_container">
+      <div class="sign_content">
+        <img src="../../media/main/content/sign/chuvaky/sign1.webp" class="sign_img" alt="chuvaky sign">
+        <img src="../../media/main/content/sign/chuvaky/sign2.webp" class="sign_img" alt="chuvaky sign">
+        <img src="../../media/main/content/sign/chuvaky/sign3.webp" class="sign_img" alt="chuvaky sign">
+      </div>
+    </div></div>
+
+        <div id="chuvaky_container"></div>
+
+      <script type="text/javascript" src="../../script/chuvaky_grid_case.js">
+        chuvakyGridMaker();
+      </script>
+
+<div class="chuvaky_links_container">
+
+        <div class="font_download_container">
+          <a href="../../downloads/main/Chuvaky_Regular.ttf" download class="font_download_link_container cursor_switch">
+            <img src="../../media/main/content/chuvaky/font/file.webp" class="font_download_link_img" alt="font download">
+          </a>
+        </div>
+
+        <div class="font_download_container" id="chuvaky_ico">
+          <a href="https://www.youtube.com/@tochuvaky" target="_blank" rel="noopener noreferrer" class="font_download_link_container cursor_switch">
+            <img src="../../media/main/content/chuvaky/font/chuvaky.webp" class="font_download_link_img" alt="chuvaky youtube">
+          </a>
+        </div>
+
+        <div class="font_download_container">
+          <a href="https://youtu.be/SqsXu7z0iM0?si=9B1mSicVftd6n6xX" target="_blank" rel="noopener noreferrer" class="font_download_link_container cursor_switch">
+            <img src="../../media/main/content/chuvaky/font/bitok.webp" class="font_download_link_img" alt="watch bitok">
+          </a>
+        </div>
+
+</div>
+
+<div class="chuvaky_portraits_container container_el">
+  <img src="../../media/main/bg/bg24.png" class="chuvaky_portraits_img">
+</div>
+
+      </div>
+
+<div class="credits_container container_el">
+</div>
+
+      <div class="chuvaky_font_container container_end">
+            <div class="font-preview" contenteditable="true" spellcheck="false">шрифт для чуваків</div>
+      </div>
+
+          <script>
+        const preview = document.querySelector('.font-preview');
+
+        preview.addEventListener('focus', function() {
+            if (preview.textContent === 'Type something...') {
+                preview.textContent = '';
+            }
+        });
+
+        preview.addEventListener('blur', function() {
+            if (preview.textContent.trim() === '') {
+                preview.textContent = 'Type something...';
+            }
+        });
+          </script>
+
+<div class="shtory_container container_el">
+  <div class="shtory_flex">
+      <a href="https://www.instagram.com/p/C8B9GAyMv2_" target="_blank" rel="noopener noreferrer" class="shtory_flex_link cursor_switch">
+          <img src="../../media/chuvaky/bitok_lq.jpg">
+      </a>
+  </div>
+</div>
+
+  </body>
+
+    <footer>
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../../media/main/footer/cc.webp"> 
+          </div>  
+            
+        </div>
+
+    </footer>
+
+</html>
