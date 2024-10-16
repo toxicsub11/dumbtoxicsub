@@ -61,6 +61,7 @@ p {
   justify-content: start;
   position: fixed;
   width: 90%;
+  z-index: -1;
 }
 
 .side_menu_container {
@@ -117,6 +118,10 @@ p {
 
 .content_last_margin {
   margin-bottom: 60px;
+}
+
+.content_container {
+  z-index: 100;
 }
 
 .footer_container {
