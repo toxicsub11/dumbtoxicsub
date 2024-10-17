@@ -138,6 +138,10 @@ p {
   z-index: 100;
 }
 
+#no_margin {
+  margin: 0;
+}
+
 .footer_container {
   display: flex;
   justify-content: space-between;
