@@ -44,8 +44,7 @@ a img {
   user-select: none;
 }
 
-.table_content_1,
-.table_content_2 {
+.table_container {
   animation: ticker 5s infinite linear forwards;
   will-change: transform;
 }
