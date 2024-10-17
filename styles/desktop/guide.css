@@ -46,6 +46,7 @@ a img {
 
 img {
   user-select: none;
+  pointer-events: none;
 }
 
         @font-face {
