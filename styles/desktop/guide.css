@@ -63,6 +63,10 @@ p {
   width: 20%;
 }
 
+#dop_margin {
+  margin-top: 60px;
+}
+
 .side_menu_container_container {
   margin-top: 30px;
   display: flex;

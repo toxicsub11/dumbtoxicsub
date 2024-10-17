@@ -64,6 +64,10 @@ p {
   width: 40%;
 }
 
+#dop_margin {
+  margin-top: 60px;
+}
+
 .side_menu_container_container {
 display: none;
 }
