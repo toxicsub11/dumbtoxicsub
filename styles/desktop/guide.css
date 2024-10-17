@@ -46,7 +46,6 @@ a img {
 
 img {
   user-select: none;
-  pointer-events: none;
 }
 
         @font-face {
@@ -106,7 +105,7 @@ width: 100%;
   justify-content: center;
 }
 
-.rozvorot_flex img { width:100%; }
+.rozvorot_flex img { width:100%; user-select: none; user-drag: none;}
 
 .rozvorot_flex {
   width: 30%;
