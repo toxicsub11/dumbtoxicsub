@@ -52,6 +52,21 @@ a img {
     background-repeat: no-repeat;
   }
 
+.table_content_1,
+.table_content_2 {
+  animation: ticker 5s infinite linear forwards;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(-81%, 0);
+  }
+
+  100% {
+    transform: translate(-31%, 0);
+  }
+}
+
 .side_menu {
   display: none;
 }
