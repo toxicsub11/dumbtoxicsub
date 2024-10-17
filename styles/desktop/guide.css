@@ -57,7 +57,7 @@ p {
 
 .title_container {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
 .title_flex img {
@@ -65,7 +65,7 @@ p {
 }
 
 .title_flex {
-  width: 80%;
+  width: 60%;
 }
 
 .side_menu_container_container {
