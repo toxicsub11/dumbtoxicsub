@@ -55,11 +55,6 @@ p {
   user-select: none;
 }
 
-.title_container {
-  display: flex;
-  justify-content: center;
-}
-
 .title_flex img {
   width: 100%;
 }
