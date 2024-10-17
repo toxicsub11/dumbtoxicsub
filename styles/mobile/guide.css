@@ -44,6 +44,10 @@ a img {
   user-select: none;
 }
 
+img {
+  user-select: none;
+}
+
         @font-face {
             font-family: 'Arial';
             src: url('../font/Arial.woff2') format('woff2');
