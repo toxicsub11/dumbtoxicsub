@@ -56,6 +56,20 @@ p {
   font-size: 12px;
 }
 
+
+.title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.title_flex img {
+  width: 100%;
+}
+
+.title_flex {
+  width: 100%;
+}
+
 .side_menu_container_container {
 display: none;
 }

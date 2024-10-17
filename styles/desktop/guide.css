@@ -55,6 +55,19 @@ p {
   user-select: none;
 }
 
+.title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.title_flex img {
+  width: 100%;
+}
+
+.title_flex {
+  width: 80%;
+}
+
 .side_menu_container_container {
   margin-top: 30px;
   display: flex;
