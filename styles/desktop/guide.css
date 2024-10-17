@@ -61,7 +61,7 @@ p {
   justify-content: start;
   position: fixed;
   width: 90%;
-  z-index: -1;
+  pointer-events: none;
 }
 
 .side_menu_container {
@@ -69,6 +69,7 @@ p {
   flex-direction: column;
   justify-content: start;
   width: 5%;
+  pointer-events: auto;
 }
 
 .cursor_switch img {
