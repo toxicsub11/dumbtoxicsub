@@ -47,15 +47,15 @@ a img {
 .table_content_1,
 .table_content_2 {
   animation: ticker 5s infinite linear forwards;
+  will-change: transform;
 }
 
 @keyframes ticker {
   0% {
-    transform: translate(-81%, 0);
+    transform: translate3d(-81%, 0, 0);
   }
-
   100% {
-    transform: translate(-31%, 0);
+    transform: translate3d(-31%, 0, 0);
   }
 }
 
