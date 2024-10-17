@@ -52,7 +52,8 @@ a img {
     background-repeat: no-repeat;
   }
 
-.table_content {
+.table_content_1,
+.table_content_2 {
   animation: ticker 5s infinite linear forwards;
   will-change: transform;
 }
