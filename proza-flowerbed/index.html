@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link
+  rel="stylesheet"
+  href="../styles/mobile/flowerbed.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/flowerbed.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/mobile/navbar.css"
+  media="screen and (max-width: 992px)" />
+
+      <link
+  rel="stylesheet"
+  href="../styles/desktop/navbar.css"
+  media="screen and (min-width: 992px)" />
+
+        <link
+  rel="stylesheet"
+  href="../styles/table_animation_main.css" />
+
+    <title>dumbtoxicsub</title>
+    <link rel="icon" type="image/svg" href="favicon.svg"/>
+
+      <script type="text/javascript">
+  function getPageInfo() {
+
+    var on_target_page = 0;
+    var pointer;
+
+    if ((on_target_page === 1)) {
+      pointer = '<img src="../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
+    }
+
+    if ((on_target_page === 0)) {
+      pointer = '<img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
+    }
+    return pointer;
+  }
+      </script>
+
+<script type="text/javascript">
+      function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "IMG")
+          return false;
+      }
+      document.oncontextmenu = nocontext;
+    </script>
+
+<style>
+     img,
+     a {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+    }
+</style>
+
+      <div class="nav_container">
+        <div class="nav" id="nav">
+          <a class="ico cursor_switch" id="main_img_container" href="../portfolio/">
+            <img src="../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
+
+          <a class="ico cursor_switch" id="phone_img_container" href="../portfolio/#contact">
+            <!-- <img src="../media/ico/contact.png" alt="contact" class="ico_img" id="phone_img"> -->
+          </a>
+
+          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
+
+          <a class="ico cursor_switch" id="shop_img_container_onpage" href="../shop">
+            <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
+          </a>
+
+          <script type="text/javascript">
+              document.write(getPageInfo());
+          </script>
+
+          <a class="ico cursor_switch" id="music_img_container" href="../music">
+            <!-- <img src="../media/ico/music.png" alt="logo" class="ico_img" id="music_img"> -->
+          </a>
+
+        </div>
+      </div>
+
+<div class="side_menu_container_container">
+<div class="side_menu_container">
+
+  <div class="side_menu_flex">
+    <a href="#1" class="cursor_switch">
+        <img src="../media/flowerbed/1.jpg">
+    </a>
+  </div>
+  <div class="side_menu_flex">
+    <a href="#2" class="cursor_switch">
+        <img src="../media/flowerbed/2.jpg">
+    </a>
+  </div>
+  <div class="side_menu_flex">
+    <a href="#3" class="cursor_switch">
+        <img src="../media/flowerbed/3.jpg">
+    </a>
+  </div>
+  <div class="side_menu_flex">
+    <a href="#4"class="cursor_switch">
+        <img src="../media/flowerbed/4.jpg">
+    </a>
+  </div>
+
+</div>
+</div>
+
+  </head>
+  <body>
+
+<div class="content_container" id="dop_margin">
+  <div class="title_flex" id="1">
+      <img src="../media/shop/ui_proza_title.png">
+  </div>
+</div>
+
+<div class="content_container" id="dop_margin">
+  <div class="content_flex">
+    <p>В РОЗРОБЦІ...</p>
+  </div>
+</div>
+</div>
+
+<div class="table_container">
+<div class="rozvorot_container" id="0">
+  <div class="rozvorot_flex">
+      <img src="../media/flowerbed/1.jpg">
+  </div>
+</div>
+
+<div class="content_container">
+  <div class="content_flex" id="cbd">
+    <img src="../media/flowerbed/cbd.jpg">
+  </div>
+  <div class="content_flex" id="exp">
+    <p>Історія про те, як я вперше покурив шмаль... Лєчєбную CBD шмаль, якшо казати точніше. Нічна Прага, трамвай до дому, купа пересадок. Ембіент мікс афекс твіна і саундтреку з майнкрафту</p>
+  </div>
+</div>
+</div>
+
+  </body>
+
+    <footer>
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../media/main/footer/cc.webp"> 
+          </div>  
+
+        </div>
+
+    </footer>
+
+</html>
