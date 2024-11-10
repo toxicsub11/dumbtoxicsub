@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /media/navbar
+Disallow: /media/main/footer

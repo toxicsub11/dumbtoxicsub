@@ -1,0 +1,4 @@
+/media/navbar/*
+  X-Robots-Tag: noindex
+/media/main/footer*
+  X-Robots-Tag: noindex
