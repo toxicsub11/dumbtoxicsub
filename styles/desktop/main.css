@@ -180,12 +180,17 @@ a img {
             src: url('../font/Chuvaky_Regular.woff2') format('woff2');
         }
 
-.proza_zine_placeholder {
+/*.proza_zine_placeholder {
   width: 100%;
   aspect-ratio: 1920 / 1779;
   background-image: url('../../media/main/content/proza_zine.webp');
   background-size: cover;
   background-position: center;
+}*/
+
+.proza_zine_placeholder,
+.proza_zine_placeholder img {
+  width: 100%;
 }
 
 .proza_zine_container {
