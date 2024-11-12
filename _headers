@@ -4,3 +4,5 @@
   X-Robots-Tag: noindex
 /media/main/contact/*
   X-Robots-Tag: noindex
+
+Accept-Encoding: gzip, compress, br
