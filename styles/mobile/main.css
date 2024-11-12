@@ -730,6 +730,21 @@ a img {
   display: none;
 }
 
+.kraplya_overall {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.kraplya_overall_flex img {
+  width: 100%;
+}
+
+.kraplya_overall_flex {
+  width: 50%;
+}
+
 .footer_container {
   display: flex;
   justify-content: space-between;
