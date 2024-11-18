@@ -52,19 +52,28 @@ a img {
   justify-content: space-between;
 }
 
+.vid_placeholder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+}
+
 .vid_container {
   display: flex;
   justify-content: center;
+  position: fixed;
 }
 
 .video-background {
-    width: 50%;
-    overflow: hidden; /* Скрываем все за пределами блока */
+  width: 50%;
 }
 
 .video-background video {
-    object-fit: cover;
     z-index: -1;
+    width: 100%;
 }
 
 .kvity_container {
