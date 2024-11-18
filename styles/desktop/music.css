@@ -53,6 +53,7 @@ a img {
 }
 
 .vid_placeholder {
+  padding-top: 80px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -65,6 +66,7 @@ a img {
   display: flex;
   justify-content: center;
   position: fixed;
+  width: 100%;
 }
 
 .video-background {
@@ -73,6 +75,33 @@ a img {
 
 .video-background video {
     z-index: -1;
+    width: 100%;
+}
+
+.frame_placeholder {
+  padding-top: 80px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: -2;
+}
+
+.frame_container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.frame-background {
+  width: 40%;
+}
+
+.frame-background img {
+    z-index: -2;
     width: 100%;
 }
 

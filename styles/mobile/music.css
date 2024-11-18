@@ -76,6 +76,32 @@ a img {
     width: 100%;
 }
 
+.frame_placeholder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: -2;
+}
+
+.frame_container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.frame-background {
+  width: 75%;
+}
+
+.frame-background img {
+    z-index: -2;
+    width: 100%;
+}
+
 .kvity_container {
   margin-top: 120px;
   margin-bottom: 30px;
