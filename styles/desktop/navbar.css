@@ -116,6 +116,30 @@
   width: 10%;
 }
 
+.cart_add {
+  width: 2%;
+  position: fixed;
+  left: 70%;
+  top: 2%;
+}
+
+.cart_add img {
+    width: 100%;
+}
+
+#cart_add {
+    opacity: 0; /* Початковий стан: прихований */
+    transition: opacity 0.3s ease; /* Плавна зміна прозорості */
+}
+
+#cart_add.visible {
+    opacity: 1; /* Коли елемент видимий */
+}
+
+#cart_add.hidden {
+    opacity: 0; /* Коли елемент прихований */
+}
+
 #pointer_main,
 #pointer_phone,
 #pointer_shop,

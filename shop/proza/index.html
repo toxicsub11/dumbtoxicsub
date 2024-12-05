@@ -93,6 +93,10 @@
             <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
           </a>
 
+          <div class="cart_add" id="cart_add">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
+
           <script type="text/javascript">
               document.write(getPageInfo());
           </script>
@@ -181,9 +185,9 @@
             <p>400 грн</p>
           </div>
         <div class="info_flex" id="info_flex_ui">
-          <a href="https://www.instagram.com/dumbtoxicsub/" target="_blank" rel="noopener noreferrer" class="info_flex_link cursor_switch">
-              <img src="../../media/shop/ui_buy.png">     
-          </a>
+          <button onclick="addToCartAndToggleElement('Проза', 400)" class="cursor_switch">
+            <img src="../../media/shop/ui_buy.png">
+          </button>
         </div>
         </div>
 
@@ -210,33 +214,43 @@
         </div>
       </div>
 
-<div class="data_form">          
-<form action="https://script.google.com/macros/s/AKfycbzx4zZQBNs5YOknoFt5j0VFj0XaOWvc0M_-vcKdPAhYOnnPxhl4KhXlusUQOWUKqx_m/exec" method="POST">
-    <label for="name">ПІБ:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="phone">Телефон:</label>
-    <input type="tel" id="phone" name="phone" required>
-
-    <label for="address">Місто:</label>
-    <input type="text" id="city" name="city" required>
-
-    <label for="address">Куди доставити:</label>
-    <input type="text" id="address" name="address" required>
-
-    <label for="address">Контакт (Tg / Inst):</label>
-    <input type="text" id="address" name="contact" required>
-
-    <!-- Приховані поля для даних товару -->
-    <input type="hidden" id="product_name" name="product_name" value="Проза">
-    <input type="hidden" id="product_price" name="product_price" value="400">
-
-    <button type="submit">Оформити замовлення</button>
-</form>
-</div>
-
 </div>
 </div>
+
+<script type="text/javascript">
+// Ініціалізація кошика
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function toggleElement() {
+            const element = document.getElementById("cart_add");
+
+                element.classList.remove("hidden");
+                element.classList.add("visible");
+
+                // Через 0.5 секунди, сховати елемент
+                setTimeout(() => {
+                    element.classList.remove("visible");
+                    element.classList.add("hidden");
+                }, 500); // Затримка 0.5 секунди (500 мс)
+
+            console.log("yeah");
+        }
+
+        function addToCartAndToggleElement(productName, productPrice) {
+            // Додаємо товар в кошик
+            cart.push({ name: productName, price: productPrice });
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            /*// Оновлюємо кошик
+            updateCart();*/
+
+            // Виконуємо анімацію з'явлення і зникнення елемента
+            toggleElement();
+
+            console.log(productName, productPrice);
+        }
+
+</script>
 
   </body>
 
