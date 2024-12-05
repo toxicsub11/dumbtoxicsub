@@ -188,6 +188,8 @@ button img {
   width: 100%;
 }
 
-#cart_items {
+#cart-items,
+#total-price {
   display: none;
 }
+

@@ -83,16 +83,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Вертикальне вирівнювання */
+    width: 30%;
 }
 
 form {
     width: 100%;
-    max-width: 400px;
     padding: 20px;
-    background-color: #000; /* Чорний фон форми */
-    border: 1px solid #fff; /* Білий контур */
-    border-radius: 8px; /* Злегка закруглені кути */
+    background-color: blue; /* Чорний фон форми */
     box-sizing: border-box;
 }
 
@@ -107,10 +104,8 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #fff; /* Білий контур */
     background-color: #000; /* Чорний фон полів */
     color: #fff; /* Білий текст */
-    border-radius: 4px;
     font-size: 14px;
 }
 
@@ -127,10 +122,9 @@ input:focus {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #fff; /* Білий фон кнопки */
-    color: #000; /* Чорний текст */
+    background-color: blue; /* Білий фон кнопки */
+    color: white; /* Чорний текст */
     border: none;
-    border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -145,4 +139,69 @@ button:hover {
 input:focus, textarea:focus {
     outline: none;
     box-shadow: none;
+}
+
+.side_menu_cart,
+.side_menu_text {
+  display: none;
+}
+
+#cart-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  width: 100%; /* Ширина 70% від екрану */
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cart-item img {
+  width: 100%;
+  user-select: none;
+}
+
+.cart-item p {
+  font-size: 24px;
+  display: none;
+}
+
+.cart_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.cart_info {
+  width: 70%;
+}
+
+.remove-item {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    cursor: url('../cursor/blue_size56.png') 16 16, auto;
+    user-select: none;
+}
+.remove-item:hover {
+    color: gray;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url(/font/Arial.woff2) format("woff2");
+}
+
+#total-price {
+  margin-top: 30px;
+  font-family: arial;
+  color: white;
+  font-size: 24px;
 }

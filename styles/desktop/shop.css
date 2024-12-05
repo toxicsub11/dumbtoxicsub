@@ -51,9 +51,8 @@ a img {
 
         .side_menu {
             position: fixed;
-            top: 22%;
-            left: 0;
-            transform: translateY(-50%);
+            top: 30%;
+            right: 0;
             background: none;
             padding: 20px;
             z-index: 1000; /* Меню будет поверх всех элементов */

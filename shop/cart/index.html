@@ -74,6 +74,17 @@
     }
 </style>
 
+    <div class="side_menu_cart" id="sideMenu">
+
+      <div class="side_menu_text">
+                <a href="../cart/" id="">Кошик</a>
+      </div>
+          <div class="cart_add" id="cart_add_cart">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
+          
+    </div>
+
       <div class="nav_container">
         <div class="nav" id="nav">
           <a class="ico cursor_switch" id="main_img_container" href="../../portfolio/">
@@ -111,29 +122,66 @@
   </head>
   <body>
 
+<div class="cart_container">
+
+<div class="cart_info">
+
+  <div id="cart-items"></div>
+  <div id="total-price"></div>
+
+</div>
+
 <div class="data_form">          
-<form action="https://script.google.com/macros/s/AKfycbwBfpX_EyvXPVJSr7gLKwAuNpld5azJ0zg_B9YL8jN-f4PMX-QkRwwH2uChbLSCM0fO/exec" method="POST">
+<form action="https://script.google.com/macros/s/AKfycbwBfpX_EyvXPVJSr7gLKwAuNpld5azJ0zg_B9YL8jN-f4PMX-QkRwwH2uChbLSCM0fO/exec" method="POST" id="order-form">
     <label for="name">ПІБ:</label>
     <input type="text" id="name" name="name" required>
 
     <label for="phone">Телефон:</label>
     <input type="tel" id="phone" name="phone" required>
 
-    <label for="address">Місто:</label>
+    <label for="city">Місто:</label>
     <input type="text" id="city" name="city" required>
 
     <label for="address">Куди доставити:</label>
     <input type="text" id="address" name="address" required>
 
-    <label for="address">Контакт (Tg / Inst):</label>
-    <input type="text" id="address" name="contact" required>
+    <label for="contact">Контакт (Tg / Inst):</label>
+    <input type="text" id="contact" name="contact" required>
 
     <!-- Приховані поля для даних товару -->
-    <input type="hidden" id="product_name" name="product_name" value="Проза">
-    <input type="hidden" id="product_price" name="product_price" value="400">
+    <input type="hidden" id="product_name" name="product_name" value="">
+    <input type="hidden" id="product_price" name="product_price" value="">
 
     <button type="submit">Оформити замовлення</button>
 </form>
+
+<script>
+// Додаємо слухача події для кнопки "Оформити замовлення"
+document.getElementById('order-form').addEventListener('submit', function(event) {
+    // Запобігаємо відправці форми
+    event.preventDefault();
+
+    // Затримка для виконання всіх дій
+    setTimeout(function() {
+        // Очищаємо форму
+        document.getElementById('order-form').reset(); // Очищаємо форму
+
+        // Вставляємо порожні значення для прихованих полів
+        document.getElementById('product_name').value = '';
+        document.getElementById('product_price').value = '';
+
+        // Очищаємо кошик
+        localStorage.removeItem('cart'); // Видаляємо кошик з localStorage
+        console.log("Кошик очищено");
+
+        // Оновлюємо кошик на сторінці
+        updateCart();
+
+        // Редірект на іншу сторінку
+        window.location.replace("http://localhost/dumbtoxicsub/shop/"); // Замініть на свою адресу
+    }, 3000); // Затримка 3 секунди
+});
+</script>
 
 <script>
     document.querySelector('form').addEventListener('submit', function(event) {
@@ -158,6 +206,34 @@
     });
 </script>
 </div>
+
+</div>
+
+<script type="text/javascript" src="../../script/cart.js">updateCart();</script>
+<script type="text/javascript">
+            const productNameField = document.getElementById('product_name');
+            const productPriceField = document.getElementById('product_price');
+
+            // Очищаємо значення полів
+            productNameField.value = '';
+            productPriceField.value = '';
+
+            // Обчислюємо загальну суму цін товарів у кошику
+            let totalPrice = 0;
+
+            cart.forEach(item => {
+                productNameField.value += item.name + ', ';  // додаємо назву товару до поля
+                totalPrice += item.price;  // додаємо ціну товару до загальної суми
+            });
+
+            // Видаляємо останню кому, якщо потрібно
+            productNameField.value = productNameField.value.slice(0, -2);
+
+            // Записуємо загальну суму цін у поле "product_price"
+            productPriceField.value = totalPrice;
+
+            console.log('Hidden fields updated!');
+</script>
 
   </body>
 
