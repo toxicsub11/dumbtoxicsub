@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="uk">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -211,18 +211,24 @@
       </div>
 
 <div class="data_form">          
-<form action="https://script.google.com/macros/s/AKfycbwLiTQ8Y3rDhpmQ9RwBJQAsP12XtpDQ5ukSqaTg_KDUKqwOTGLLlf9g77nqe6rMVWNU/exec" method="POST">
+<form action="https://script.google.com/macros/s/AKfycbzx4zZQBNs5YOknoFt5j0VFj0XaOWvc0M_-vcKdPAhYOnnPxhl4KhXlusUQOWUKqx_m/exec" method="POST">
     <label for="name">ПІБ:</label>
     <input type="text" id="name" name="name" required>
 
     <label for="phone">Телефон:</label>
     <input type="tel" id="phone" name="phone" required>
 
-    <label for="address">Відділеня НП:</label>
+    <label for="address">Місто:</label>
+    <input type="text" id="city" name="city" required>
+
+    <label for="address">Куди доставити:</label>
     <input type="text" id="address" name="address" required>
 
+    <label for="address">Контакт (Tg / Inst):</label>
+    <input type="text" id="address" name="contact" required>
+
     <!-- Приховані поля для даних товару -->
-    <input type="hidden" id="product_name" name="product_name" value="Проза'">
+    <input type="hidden" id="product_name" name="product_name" value="Проза">
     <input type="hidden" id="product_price" name="product_price" value="400">
 
     <button type="submit">Оформити замовлення</button>
