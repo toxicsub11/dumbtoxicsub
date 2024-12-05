@@ -158,3 +158,71 @@ p {
 .cursor_switch:hover {
   cursor: url('../cursor/blue_size56.png') 16 16, auto;
 }
+
+.data_form {
+    background-color: #000; /* Чорний фон для сторінки */
+    color: #fff; /* Білий текст */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Вертикальне вирівнювання */
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #000; /* Чорний фон форми */
+    border: 1px solid #fff; /* Білий контур */
+    border-radius: 8px; /* Злегка закруглені кути */
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fff; /* Білий текст */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff; /* Білий контур */
+    background-color: #000; /* Чорний фон полів */
+    color: #fff; /* Білий текст */
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #aaa; /* Світліший текст для плейсхолдера */
+}
+
+input:focus {
+    outline: none;
+    border-color: #fff; /* Контур при фокусі */
+    background-color: #111; /* Легкий підсвіт чорного */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff; /* Білий фон кнопки */
+    color: #000; /* Чорний текст */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #aaa; /* Сірий фон при наведенні */
+    color: #000; /* Зберігаємо чорний текст */
+}
