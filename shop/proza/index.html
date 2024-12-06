@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="uk">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Офіційний онлайн магазин Тіми Дамбтоксіксаб, from Kharkiv with love!">
+    <meta name="description" content="Журнал/зін «Проза»
+    Офіційний онлайн магазин Тіми Дамбтоксіксаб">
 
     <link
   rel="stylesheet"
-  href="../styles/mobile/shop.css"
+  href="../../styles/mobile/proza.css"
   media="screen and (max-width: 992px)" />
 
       <link
   rel="stylesheet"
-  href="../styles/desktop/shop.css"
+  href="../../styles/desktop/proza.css"
   media="screen and (min-width: 992px)" />
 
         <link
   rel="stylesheet"
-  href="../styles/mobile/navbar.css"
+  href="../../styles/mobile/navbar.css"
   media="screen and (max-width: 992px)" />
 
       <link
   rel="stylesheet"
-  href="../styles/desktop/navbar.css"
+  href="../../styles/desktop/navbar.css"
   media="screen and (min-width: 992px)" />
 
         <link
   rel="stylesheet"
-  href="../styles/table_animation_main.css" />
+  href="../../styles/table_animation_main.css" />
 
-    <title>Dumbtoxicsub | Shop</title>
+    <title>Проза | Dumbtoxicsub</title>
     <link rel="icon" type="image/svg" href="favicon.svg"/>
     <link rel="canonical" href="https://dumbtoxicsub.xyz/portfolio/"/> 
 
@@ -46,11 +47,11 @@
     var pointer;
 
     if ((on_target_page === 1)) {
-      pointer = '<img src="../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
+      pointer = '<img src="../../media/navbar/nav/youarehere_inverted.svg" class="nav_pointer" id="pointer_music">';
     }
 
     if ((on_target_page === 0)) {
-      pointer = '<img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
+      pointer = '<img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_shop">';
     }
     return pointer;
   }
@@ -74,35 +75,37 @@
     }
 </style>
 
-<script type="text/javascript" src="../script/cart.js">updateCartButton();</script>
-
       <div class="nav_container">
         <div class="nav" id="nav">
-          <a class="ico cursor_switch" id="main_img_container" href="../portfolio/">
-            <img src="../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
+          <a class="ico cursor_switch" id="main_img_container" href="../../portfolio/">
+            <img src="../../media/navbar/webp/main.webp" alt="main" id="logo_img" class="navbar_container_sizer">
           </a>
 
-          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
+          <img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_main" alt="you are here">
 
-          <a class="ico cursor_switch" id="phone_img_container" href="../portfolio/#contact">
+          <a class="ico cursor_switch" id="phone_img_container" href="../../portfolio/#contact">
             <!-- <img src="../media/ico/contact.png" alt="contact" class="ico_img" id="phone_img"> -->
           </a>
 
-          <img src="../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
+          <img src="../../media/navbar/nav/youarehere.svg" class="nav_pointer" id="pointer_phone" alt="you are here"> 
 
-          <a class="ico cursor_switch" id="shop_img_container_onpage" href="#">
+          <a class="ico cursor_switch" id="shop_img_container_onpage" href="../">
             <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
           </a>
+
+          <div class="cart_add" id="cart_add">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
 
           <script type="text/javascript">
               document.write(getPageInfo());
           </script>
 
-          <a class="ico cursor_switch" id="music_img_container" href="../music">
+          <a class="ico cursor_switch" id="music_img_container" href="../../music">
             <!-- <img src="../media/ico/music.png" alt="logo" class="ico_img" id="music_img"> -->
           </a>
 
-<script type="text/javascript" src="../script/pointer.js"></script>
+<script type="text/javascript" src="../../script/pointer.js"></script>
 <script type="text/javascript">
   setupHoverEffect('shop_img_container_onpage', 'pointer_shop');
 </script>
