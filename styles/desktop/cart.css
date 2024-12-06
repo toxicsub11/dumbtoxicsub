@@ -55,6 +55,37 @@ p {
   user-select: none;
 }
 
+.reg_text {
+  font-size: 24px;
+}
+
+.sm_text {
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.succes_container_container {
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 300vh;
+  display: none;
+}
+
+.succes_container {
+  display: flex;
+  justify-content: center;
+}
+
+.succes_container_top {
+  position: fixed;
+  top: 40%;
+}
+
+.succes_flex {
+  text-align: center;
+}
+
 .footer_container {
   display: flex;
   justify-content: space-between;
@@ -176,6 +207,8 @@ input:focus, textarea:focus {
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .cart_info {

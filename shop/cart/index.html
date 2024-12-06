@@ -122,7 +122,20 @@
   </head>
   <body>
 
-<div class="cart_container">
+<div class="succes_container_container" id="succes">
+  <div class="succes_container">
+  <div class="succes_container_top">
+    <div class="succes_flex">
+        <p class="reg_text" id="order_number"></p>
+        <p class="reg_text">Дякую за замовлення ° ͜ʖ ͡.</p>
+        <p class="reg_text">Я зв'яжусь з тобою для оплати</p>
+        <p class="sm_text">привіт податкова :)</p>
+    </div> 
+  </div>
+  </div>
+</div>
+
+<div class="cart_container" id="cart">
 
 <div class="cart_info">
 
@@ -132,7 +145,7 @@
 </div>
 
 <div class="data_form">          
-<form action="https://script.google.com/macros/s/AKfycbwBfpX_EyvXPVJSr7gLKwAuNpld5azJ0zg_B9YL8jN-f4PMX-QkRwwH2uChbLSCM0fO/exec" method="POST" id="order-form">
+<form action="https://script.google.com/macros/s/AKfycbyM4cskF8-7_-2K8RDIm-ctQ7DUemDfBwcjfzzn5pPNo1n5ZhHMHwX6VicHTr5FLVel/exec" method="POST" id="order-form">
     <label for="name">ПІБ:</label>
     <input type="text" id="name" name="name" required>
 
@@ -145,12 +158,23 @@
     <label for="address">Куди доставити:</label>
     <input type="text" id="address" name="address" required>
 
-    <label for="contact">Контакт (Tg / Inst):</label>
+    <label for="contact">Контакт (Tg / Inst / Email):</label>
     <input type="text" id="contact" name="contact" required>
 
     <!-- Приховані поля для даних товару -->
     <input type="hidden" id="product_name" name="product_name" value="">
     <input type="hidden" id="product_price" name="product_price" value="">
+    <input type="hidden" id="number" name="number" value="">
+
+    <script type="text/javascript">
+// Створення змінної та присвоєння їй значення
+var randomNumber = Math.floor(Math.random() * 900) + 100; // Генеруємо випадкове число від 100 до 999
+
+// Знаходимо елемент input по його id і задаємо значення для value
+document.getElementById('number').value = randomNumber;
+
+console.log(randomNumber); // Вивести значення змінної на консоль
+    </script>
 
     <button type="submit">Оформити замовлення</button>
 </form>
@@ -158,6 +182,15 @@
 <script>
 // Додаємо слухача події для кнопки "Оформити замовлення"
 document.getElementById('order-form').addEventListener('submit', function(event) {
+
+        var order = document.getElementById('order_number');
+            order.textContent = '№ ' + randomNumber;
+
+        var cart_container = document.getElementById('cart');
+            cart_container.style.display = 'none';
+        var succes_container = document.getElementById('succes');
+            succes_container.style.display = 'block';
+
     // Запобігаємо відправці форми
     event.preventDefault();
 
@@ -178,7 +211,7 @@ document.getElementById('order-form').addEventListener('submit', function(event)
         updateCart();
 
         // Редірект на іншу сторінку
-        window.location.replace("https://dumbtoxicsub.xyz/shop/"); // Замініть на свою адресу
+        window.location.replace("https:/dumbtoxicsub.xyz/shop/"); // Замініть на свою адресу
     }, 3000); // Затримка 3 секунди
 });
 </script>

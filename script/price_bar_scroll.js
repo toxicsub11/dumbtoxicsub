@@ -6,14 +6,14 @@ window.onload = function() {
     if (stopElement && changeElement) {
         window.addEventListener('scroll', function() {
             const viewportHeight = window.innerHeight; // Висота екрану
-            const changePosition = changeElement.getBoundingClientRect().top + window.scrollY - viewportHeight / 3; // Центр екрану
+            const changePosition = changeElement.getBoundingClientRect().top + window.scrollY - viewportHeight / 4; // Центр екрану
             const stopPosition = stopElement.getBoundingClientRect().top + window.scrollY;
 
             let scrollPosition = window.scrollY;
 
             // Змінюємо текст price_bar, якщо changeElement в центрі екрану
             if (scrollPosition >= changePosition) {
-                sideMenu.textContent = "500 unavialable";
+                sideMenu.textContent = "";
             } else {
                 sideMenu.textContent = "400";
             }
