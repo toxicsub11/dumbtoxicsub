@@ -184,3 +184,15 @@ a img {
 .cursor_switch:hover {
   cursor: url('../cursor/blue_size56.png') 16 16, auto;
 }
+
+.p_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.p_flex p {
+  color: white;
+  font-family: arial;
+  font-size: 36px;
+}

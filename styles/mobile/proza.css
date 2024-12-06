@@ -159,3 +159,15 @@ p {
 .footer_flex {
   width: 30%;
 }
+
+.p_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40vh;
+}
+
+.p_flex p {
+  color: white;
+  font-family: arial;
+  font-size: 24px;
+}
