@@ -180,6 +180,7 @@ p {
 
 .no_stock.true {
   display: block;
+  margin-bottom: 30px;
 }
 
 #text_block_mob {
@@ -247,6 +248,7 @@ button img {
   display: none;
   margin: 0;
 }
+
 
 .no_stock_mob {
   display: none;
