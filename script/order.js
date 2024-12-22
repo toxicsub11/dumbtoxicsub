@@ -35,6 +35,6 @@ event.preventDefault();
                 // Вставляємо порожні значення для прихованих полів
 
         // Редірект на іншу сторінку
-        window.location.replace("https:/dumbtoxicsub.xyz/shop/"); // Замініть на свою адресу
+        window.location.replace("../shop/"); // Замініть на свою адресу
     }, 4000); // Затримка 3 секунди
 });
