@@ -248,7 +248,7 @@ button img {
   margin: 0;
 }
 
-.no_stock.true {
+.no_stock_mob.true {
   display: block;
   margin-bottom: 30px;
 }
