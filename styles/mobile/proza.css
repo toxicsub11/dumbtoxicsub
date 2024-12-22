@@ -248,6 +248,11 @@ button img {
   margin: 0;
 }
 
+.no_stock_mob {
+  display: none;
+  margin: 0;
+}
+
 .no_stock_mob.true {
   display: block;
   margin-bottom: 30px;
