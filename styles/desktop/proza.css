@@ -251,6 +251,10 @@ button[disabled] {
   display: block;
 }
 
+.no_stock_mob {
+  display: none;
+}
+
 #text_block_mob {
   display: none;
 }

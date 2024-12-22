@@ -56,8 +56,10 @@ console.log("Переданий productId:", productId);
         const productRef = doc(db, 'products', productId); // Отримуємо посилання на документ
         const productSnap = await getDoc(productRef); // Отримуємо дані документа
         const noStock = document.querySelectorAll('.no_stock');
+        const noStockMob = document.querySelectorAll('.no_stock_mob');
 
         noStock.forEach(n => n.classList.remove('true'));
+        noStockMob.forEach(n => n.classList.remove('true'));
 
         console.log('Отриманий документ з Firestore:', productSnap.data());
 
@@ -85,6 +87,7 @@ console.log("Переданий productId:", productId);
                 toggleElementCart();
             } else {
                 noStock.forEach(n => n.classList.add('true'));
+                noStockMob.forEach(n => n.classList.add('true'));
                 // Деактивуємо кнопку покупки
                 /*const button = document.querySelector(`[data-product-id="${productId}"]`);
                 button.disabled = true;
