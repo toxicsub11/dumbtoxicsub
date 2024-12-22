@@ -39,6 +39,12 @@
 <link rel="preload" href="../media/navbar/webp/shop.webp" as="image">
 <link rel="preload" href="../media/navbar/webp/music.webp" as="image">
 
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+
+<script type="module" src="../script/firebase.js"></script>
+
       <script type="text/javascript">
   function getPageInfo() {
 
@@ -74,7 +80,22 @@
     }
 </style>
 
-<script type="text/javascript" src="../script/cart.js">updateCartButton();</script>
+    <div class="side_menu" id="sideMenu">
+        <a id="price_bar" class="link">Ціна</a>
+    </div>
+
+    <div class="side_menu_cart" id="sideMenu">
+
+      <div class="side_menu_text" id="">
+                <a href="cart/" id="">Кошик</a>
+      </div>
+          <div class="cart_add" id="cart_add_cart">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
+          
+    </div>
+
+<script type="module" src="../script/cart.js">updateCartButton();</script>
 
       <div class="nav_container">
         <div class="nav" id="nav">
@@ -113,12 +134,71 @@
   </head>
   <body>
 
-<div class="p_container">
-  <div class="p_flex">
-    <p>Ця сторінка на рємонтє :(</p>
+<div class="shop_scroll">
+
+<div class="table_container_sm_grid" id="table_container_start">
+  <div class="table_flex" id="">
+    <a href="proza/" rel="noopener noreferrer" class="table_flex_link cursor_switch hover-item" data-text="400">
+        <img src="../media/shop/content/zine_gif.gif" class="">
+    </a>
+  </div>
+  <div class="table_flex" id="table_flex">
+    <a href="proza/" rel="noopener noreferrer" class="table_flex_link cursor_switch hover-item" data-text="400">
+        <img src="../media/shop/content/zine.jpg" class="">
+    </a>
   </div>
 </div>
 
+
+<div class="table_container_sm_grid add_margin add_padding" id="changeElement">
+  <div class="" data-text="" id="">
+    <a rel="noopener noreferrer" class="table_flex_link">
+    </a>
+  </div>
+  <div class="table_flex hover-item extra_width" data-text="A5 / 50" id="">
+    <a href="zhittya/" rel="noopener noreferrer" class="table_flex_link cursor_switch">
+        <img src="../media/shop/content/film/slow_gif.gif" class="">
+    </a>
+  </div>
+</div>
+
+<!--<script type="text/javascript" src="../script/price_bar_scroll.js"></script>-->
+
+<script type="text/javascript">
+  const link = document.querySelector('.link'); // Знаходимо елемент <a>
+const hoverItems = document.querySelectorAll('.hover-item'); // Знаходимо всі елементи, на які можна наводити
+
+hoverItems.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const newText = item.getAttribute('data-text'); // Отримуємо значення з атрибута data-text
+    link.textContent = newText; // Змінюємо текст <a>
+    console.log('hover');
+  });
+
+  item.addEventListener('mouseleave', () => {
+    link.textContent = 'Ціна'; // Повертаємо початковий текст при виході курсору
+  });
+});
+</script>
+
+</div>
+
+
   </body>
+
+    <footer>
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../media/main/footer/cc.webp"> 
+          </div>  
+
+        </div>
+
+    </footer>
 
 </html>

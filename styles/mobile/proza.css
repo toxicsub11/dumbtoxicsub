@@ -35,9 +35,7 @@ body::-webkit-scrollbar {
 }
 
 a {
-    line-height: 0; 
-    font-size: 0;
-    color: transparent;
+    color: white;
 }
 
 a img {
@@ -170,4 +168,87 @@ p {
   color: white;
   font-family: arial;
   font-size: 24px;
+}
+
+#text_block_desktop {
+  display: none;
+}
+
+.no_stock {
+  display: none;
+}
+
+.no_stock.true {
+  display: block;
+}
+
+#text_block_mob {
+  display: none;
+}
+
+#photo_desktop {
+  display: none;
+}
+
+.variant img {
+    width: 100%;
+    cursor: url('../cursor/blue_size56.png') 16 16, auto;
+    transition: filter 0.3s;
+    padding: 5px;
+    background: none;
+}
+
+.variant img:hover {
+    filter: grayscale(100%);
+}
+
+.variant.selected {
+  background-color: blue;
+   filter: brightness(2);
+}
+
+.variant.selected img {
+    filter: grayscale(100%);
+}
+
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.info_flex_ui {
+  margin-bottom: 30px;
+}
+
+.desktop_shit {
+  display: none;
+}
+
+.desktop_margin {
+  margin-bottom: 0px;
+}
+
+button {
+    background: none;  /* Прибирає фон кнопки */
+    border: none;      /* Прибирає рамку */
+    padding: 0;        /* Прибирає відступи */
+    width: 100%;
+}
+
+button img {
+  width: 100%;
+}
+
+#cart-items {
+  display: none;
+}
+
+.no_stock {
+  display: none;
+  margin: 0;
+}
+
+.no_stock.true {
+  display: block;
+  margin-bottom: 30px;
 }

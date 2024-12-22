@@ -74,25 +74,28 @@ p {
   cursor: url('../cursor/blue_size56.png') 16 16, auto;
 }
 
+.side_menu_cart,
+.side_menu_text {
+    display: none;
+}
+
 .data_form {
     background-color: #000; /* Чорний фон для сторінки */
     color: #fff; /* Білий текст */
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Вертикальне вирівнювання */
+    width: 100%;
 }
 
 form {
     width: 100%;
-    max-width: 400px;
     padding: 20px;
-    background-color: #000; /* Чорний фон форми */
-    border: 1px solid #fff; /* Білий контур */
-    border-radius: 8px; /* Злегка закруглені кути */
+    background-color: blue; /* Чорний фон форми */
     box-sizing: border-box;
 }
 
@@ -107,10 +110,8 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #fff; /* Білий контур */
     background-color: #000; /* Чорний фон полів */
     color: #fff; /* Білий текст */
-    border-radius: 4px;
     font-size: 14px;
 }
 
@@ -127,10 +128,9 @@ input:focus {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #fff; /* Білий фон кнопки */
-    color: #000; /* Чорний текст */
+    background-color: blue; /* Білий фон кнопки */
+    color: white; /* Чорний текст */
     border: none;
-    border-radius: 4px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -146,3 +146,87 @@ input:focus, textarea:focus {
     outline: none;
     box-shadow: none;
 }
+
+
+.succes_container_container {
+  position: fixed;
+  background-color: black;
+  width: 100vw;
+  height: 300vh;
+  display: none;
+}
+
+.succes_container {
+  display: flex;
+  justify-content: center;
+}
+
+.succes_container_top {
+  position: fixed;
+  top: 40%;
+}
+
+.succes_flex {
+  text-align: center;
+}
+
+.reg_text {
+  font-size: 20px;
+}
+
+.sm_text {
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+    .cart_info {
+        width: 100%;
+    }
+
+    #cart-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+        width: 100%;
+    }
+
+    #total-price {
+        margin-bottom: 30px;
+        font-family: arial;
+        color: white;
+        font-size: 24px;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cart-item img {
+        width: 100%;
+        user-select: none;
+    }
+
+.remove-item {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        margin-left: 10px;
+        cursor: url(../cursor/blue_size56.png) 16 16, auto;
+        user-select: none;
+    }
+
+    .cart-item p {
+        font-size: 24px;
+        display: none;
+    }
+
+    .cart_container {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }

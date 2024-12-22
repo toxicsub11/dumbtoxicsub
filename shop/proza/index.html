@@ -40,6 +40,9 @@
 <link rel="preload" href="../media/navbar/webp/shop.webp" as="image">
 <link rel="preload" href="../media/navbar/webp/music.webp" as="image">
 
+<script type="module" src="../../script/cart.js"></script>
+<script type="module" src="../../script/proza.js"></script>
+
       <script type="text/javascript">
   function getPageInfo() {
 
@@ -75,6 +78,17 @@
     }
 </style>
 
+    <div class="side_menu_cart" id="sideMenu">
+
+      <div class="side_menu_text" id="bg_sidemenu_text">
+                <a href="../cart/" id="">Кошик</a>
+      </div>
+          <div class="cart_add" id="cart_add_cart">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
+
+    </div>
+
       <div class="nav_container">
         <div class="nav" id="nav">
           <a class="ico cursor_switch" id="main_img_container" href="../../portfolio/">
@@ -92,6 +106,10 @@
           <a class="ico cursor_switch" id="shop_img_container_onpage" href="../">
             <!-- <img src="../media/ico/shop.png" alt="logo" class="ico_img" id="shop_img"> -->
           </a>
+
+          <div class="cart_add" id="cart_add">
+            <img src="../../media/navbar/nav/plus.svg" class="" id="" alt="you are here">
+          </div>
 
           <script type="text/javascript">
               document.write(getPageInfo());
@@ -112,12 +130,137 @@
   </head>
   <body>
 
-<div class="p_container">
-  <div class="p_flex">
-    <p>Ця сторінка на рємонтє :(</p>
+<div class="product_container_container">
+
+<div class="product_container">
+
+  <div class="info_container_container" id="mob_container">
+    <div class="info_container">
+
+        <div class="info_flex_title margin_flex">
+            <img src="../../media/shop/ui_proza_title.png">
+        </div>
+
+        <div class="info_flex margin_flex" id="quote_flex">
+          <div class="text_block">
+            <p>Проза - від слова прозорість.</p>
+            <p>Прозорість це що? Прозорість ще щирість.</p>
+            <p>Це зін, книжка, журнальчік про щирість!</p>
+            <p>Про мою рефлексію на останні 3 роки життя</p>
+          </div>
+        </div>
+
+        <div class="info_flex margin_flex">
+          <div class="text_block">
+            <p>Ілюстрована історія про Прагу, Харків й Берлін.</p>
+            <p>Про друзів, психоделіки й творчість</p>
+          </div>
+        </div>
+
+    </div>
   </div>
+
+  <div class="photo_container margin_flex">
+      <img src="../../media/shop/content/zine.jpg" class="margin_flex">
+      <img src="../../media/shop/content/zine_gif.gif">
+  </div>
+
+  <div class="info_container_container" id="desktop_container">
+    <div class="info_container">
+
+        <div class="info_flex_title margin_flex">
+            <img src="../../media/shop/ui_proza_title.png">
+        </div>
+
+        <div class="info_flex margin_flex" id="quote_flex">
+          <div class="text_block">
+            <p>Проза - від слова прозорість.</p>
+            <p>Прозорість це що? Прозорість ще щирість.</p>
+            <p>Це зін, книжка, журнальчік про щирість!</p>
+            <p>Про мою рефлексію на останні 3 роки життя</p>
+          </div>
+        </div>
+
+        <div class="info_flex margin_flex">
+          <div class="text_block">
+            <p>Ілюстрована історія про Прагу, Харків й Берлін.</p>
+            <p>Про друзів, психоделіки й творчість</p>
+          </div>
+        </div>
+
+        <div class="info_flex" id="big_margin_flex">
+          <div class="text_block">
+            <p>118 сторінок, А5</p>
+          </div>
+        </div>
+
+        <div class="info_flex_ui">
+          <div class="text_block" id="big_font">
+            <p>400 грн</p>
+          </div>
+        <div class="info_flex" id="info_flex_ui">
+          <button class="cursor_switch cart_button" data-product-name="Проза">
+            <img src="../../media/shop/ui_buy.png">
+          </button>
+        </div>
+        </div>
+
+        <div class="no_stock" id="no_stock">
+          <div class="text_block" id="text_block_desktop">
+            <p>НЕМА В НАЯВНОСТІ :(</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+      <div class="info_container_container" id="mob_container">
+        <div class="info_flex margin_flex">
+          <div class="text_block">
+            <p id="mid_font">118 сторінок, А5</p>
+          </div>
+        </div>
+
+        <div class="info_flex_ui">
+          <div class="text_block" id="big_font">
+            <p>400 грн</p>
+          </div>
+
+        <div class="info_flex" id="info_flex_ui">
+          <button class="cursor_switch cart_button" data-product-name="Проза">
+            <img src="../../media/shop/ui_buy.png">
+          </button>
+        </div>
+        </div>
+      </div>
+
+        <div class="no_stock" id="no_stock">
+          <div class="text_block" id="text_block_mob">
+            <p>НЕМА В НАЯВНОСТІ :(</p>
+          </div>
+        </div>
+
+</div>
 </div>
 
+<div id="cart-items"></div>
+<div id="total-price"></div>
+
   </body>
+
+    <footer>
+
+        <div class="footer_container">
+
+          <div class="footer_flex">
+              <img src="../../media/main/footer/2024.webp"> 
+          </div>   
+          <div class="footer_flex">
+              <img src="../../media/main/footer/cc.webp"> 
+          </div>  
+
+        </div>
+
+    </footer>
 
 </html>

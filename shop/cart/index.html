@@ -39,6 +39,8 @@
 <link rel="preload" href="../media/navbar/webp/shop.webp" as="image">
 <link rel="preload" href="../media/navbar/webp/music.webp" as="image">
 
+<script type="module" src="../../script/cart.js"></script>
+
       <script type="text/javascript">
   function getPageInfo() {
 
@@ -139,13 +141,13 @@
 
 <div class="cart_info">
 
-  <div id="cart-items"></div>
   <div id="total-price"></div>
+  <div id="cart-items"></div>
 
 </div>
 
 <div class="data_form">          
-<form action="https://script.google.com/macros/s/AKfycbyM4cskF8-7_-2K8RDIm-ctQ7DUemDfBwcjfzzn5pPNo1n5ZhHMHwX6VicHTr5FLVel/exec" method="POST" id="order-form">
+<form action="https://script.google.com/macros/s/AKfycbyI91rhOibz6qu-1zg0jCcsw3k8a4r26j2jRc8r2qMprLVApcYAxoGTXT-pdKUslhsK/exec" method="POST" id="order-form">
     <label for="name">ПІБ:</label>
     <input type="text" id="name" name="name" required>
 
@@ -179,94 +181,13 @@ console.log(randomNumber); // Вивести значення змінної н�
     <button type="submit">Оформити замовлення</button>
 </form>
 
-<script>
-// Додаємо слухача події для кнопки "Оформити замовлення"
-document.getElementById('order-form').addEventListener('submit', function(event) {
+<script type="module" src="../../script/order.js"></script>
 
-        var order = document.getElementById('order_number');
-            order.textContent = '№ ' + randomNumber;
-
-        var cart_container = document.getElementById('cart');
-            cart_container.style.display = 'none';
-        var succes_container = document.getElementById('succes');
-            succes_container.style.display = 'block';
-
-    // Запобігаємо відправці форми
-    event.preventDefault();
-
-    // Затримка для виконання всіх дій
-    setTimeout(function() {
-        // Очищаємо форму
-        document.getElementById('order-form').reset(); // Очищаємо форму
-
-        // Вставляємо порожні значення для прихованих полів
-        document.getElementById('product_name').value = '';
-        document.getElementById('product_price').value = '';
-
-        // Очищаємо кошик
-        localStorage.removeItem('cart'); // Видаляємо кошик з localStorage
-        console.log("Кошик очищено");
-
-        // Оновлюємо кошик на сторінці
-        updateCart();
-
-        // Редірект на іншу сторінку
-        window.location.replace("https:/dumbtoxicsub.xyz/shop/"); // Замініть на свою адресу
-    }, 3000); // Затримка 3 секунди
-});
-</script>
-
-<script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Перешкоджаємо стандартному відправленню форми
-
-        var form = event.target;
-        var formData = new FormData(form);
-
-        fetch(form.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json()) // Очікуємо JSON відповідь
-        .then(data => {
-            alert(data.message); // Виводимо повідомлення
-            // Додаткові дії після успішної відправки, наприклад, очищення форми
-            form.reset(); 
-        })
-        .catch(error => {
-            console.error('Помилка:', error);
-        });
-    });
-</script>
 </div>
 
 </div>
 
-<script type="text/javascript" src="../../script/cart.js">updateCart();</script>
-<script type="text/javascript">
-            const productNameField = document.getElementById('product_name');
-            const productPriceField = document.getElementById('product_price');
-
-            // Очищаємо значення полів
-            productNameField.value = '';
-            productPriceField.value = '';
-
-            // Обчислюємо загальну суму цін товарів у кошику
-            let totalPrice = 0;
-
-            cart.forEach(item => {
-                productNameField.value += item.name + ', ';  // додаємо назву товару до поля
-                totalPrice += item.price;  // додаємо ціну товару до загальної суми
-            });
-
-            // Видаляємо останню кому, якщо потрібно
-            productNameField.value = productNameField.value.slice(0, -2);
-
-            // Записуємо загальну суму цін у поле "product_price"
-            productPriceField.value = totalPrice;
-
-            console.log('Hidden fields updated!');
-</script>
+<script type="module" src="../../script/cart.js">updateCart();</script>
 
   </body>
 

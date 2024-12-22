@@ -204,3 +204,53 @@ button img {
   font-family: arial;
   font-size: 36px;
 }
+
+button {
+    cursor: url('../cursor/blue_size56.png') 16 16, auto;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+.variant img {
+    width: 100%;
+    cursor: url('../cursor/blue_size56.png') 16 16, auto;
+    transition: filter 0.3s;
+    padding: 5px;
+    background: none;
+}
+
+.variant img:hover {
+    filter: grayscale(100%);
+}
+
+.variant.selected {
+  background-color: blue;
+   filter: brightness(2);
+}
+
+.variant.selected img {
+    filter: grayscale(100%);
+}
+
+.variants-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.text_container {
+  margin-bottom: 30px;
+}
+
+.no_stock {
+  display: none;
+}
+
+.no_stock.true {
+  display: block;
+}
+
+#text_block_mob {
+  display: none;
+}

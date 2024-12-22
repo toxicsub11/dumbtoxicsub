@@ -122,3 +122,80 @@
 #pointer_music {
   opacity: 0;
 }
+
+        .side_menu_cart {
+                position: fixed;
+                width: 100%;
+                top: 88%;
+        }
+
+        .side_menu_cart_shop {
+            position: fixed;
+            display: flex;
+            justify-content: start;
+            top: 85%;
+            left: 0;
+            background: none;
+            padding: 20px;
+            z-index: 1000; /* Меню будет поверх всех элементов */
+            font-family: Arial, sans-serif;
+        }
+
+.cart_add {
+  width: 2%;
+  position: fixed;
+  left: 70%;
+  top: 2%;
+}
+
+    #cart_add_cart {
+        width: 6%;
+        position: relative;
+        bottom: 60px;
+        left: 69%;
+    }
+
+.cart_add img {
+    width: 100%;
+}
+
+#cart_add_cart img {
+  width: 100%;
+}
+
+#cart_add,
+#cart_add_cart {
+    opacity: 0; /* Початковий стан: прихований */
+    transition: opacity 0.3s ease; /* Плавна зміна прозорості */
+}
+
+#cart_add.visible,
+#cart_add_cart.visible {
+    opacity: 1; /* Коли елемент видимий */
+}
+
+#cart_add.hidden,
+#cart_add_cart.hidden {
+    opacity: 0; /* Коли елемент прихований */
+}
+
+.side_menu_text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+}
+
+.side_menu_text a {
+    z-index: 1000; /* Меню будет поверх всех элементов */
+    padding: 5px;
+    background-color: blue;
+}
+
+    .cart_add {
+        width: 5%;
+        position: fixed;
+        left: 70%;
+        top: 1%;
+    }

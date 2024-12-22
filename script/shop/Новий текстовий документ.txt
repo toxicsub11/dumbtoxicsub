@@ -1,0 +1,8 @@
+import { addToCartAndToggleElement } from '../cart.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.cart_button');
+    button.addEventListener('click', () => {
+        addToCartAndToggleElement('плівка', 'Фото Прінт (Мале Життя)', 50, '../../media/shop/product/film/gif.gif');
+    });
+});
