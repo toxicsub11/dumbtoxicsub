@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainImage = document.getElementById('main-product-image');
     let selectedVariant = null; // Спочатку варіант не вибраний
 
-    default_variant.classList.add('selected');
 
     // Вибір варіанту
     variants.forEach(variant => {
@@ -22,13 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // Оновлюємо вибраний варіант
             selectedVariant = {
                 name: variant.dataset.name,
+                id: variant.dataset.id,
                 image: variant.dataset.image
             };
 
             // Оновлюємо головне зображення
             mainImage.src = selectedVariant.image;
 
-            console.log('Вибраний варіант:', selectedVariant);
+            console.log('Обраний варіант:', selectedVariant);
         });
     });
 
@@ -39,8 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 console.log(button); // Перевірте, чи знаходиться кнопка
 if (!button) {
     console.error('Кнопку не знайдено!');
-} else {
-    console.log('Кнопка знайдена:', button);
 }
 
 
@@ -49,25 +47,29 @@ const buttons = document.querySelectorAll('.cart_button');
 buttons.forEach(button => {
     button.addEventListener('click', (event) => {
 
-if (selectedVariant && selectedVariant.name && selectedVariant.image) {
+if (selectedVariant && selectedVariant.name && selectedVariant.image && selectedVariant.id) {
 
         console.log('Button clicked:', event.target);
         console.log('Button data-product-name:', event.target.dataset.productName);
         
-        let name = 'Фото Прінт рандом (Мале Життя)';
-        let image = '../../media/shop/content/film/slow_gif.gif';
+        let name = 'Цианотипія (Пошукова операція)';
+        let image = '../../media/shop/content/routine.jpg';
+        let identify = "циан_Пошукова"
 
-        if (selectedVariant && selectedVariant.name && selectedVariant.image) {
+        if (selectedVariant && selectedVariant.name && selectedVariant.image && selectedVariant.id) {
             name = selectedVariant.name;
+            identify = selectedVariant.id;
             image = selectedVariant.image;
+        } else {
         }
 
         console.log('Додаємо в кошик:', { name, image });
-        addToCartAndToggleElement('плівка', name, 50, image);
+        addToCartAndToggleElement(identify, name, 50, image); 
     } else {
         console.log('варіант не обрано, піздєц :)');
     }
-    });
+
+    }); 
 });
 
 

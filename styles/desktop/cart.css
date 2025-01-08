@@ -79,7 +79,7 @@ p {
 
 .succes_container_top {
   position: fixed;
-  top: 40%;
+  top: 30%;
 }
 
 .succes_flex {
@@ -238,4 +238,25 @@ input:focus, textarea:focus {
   font-family: arial;
   color: white;
   font-size: 24px;
+}
+
+#reg_text_space {
+  margin-bottom: 60px;
+}
+
+#reg_text_space_sm {
+  margin-bottom: 30px;
+}
+
+.redirect_button {
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.redirect_button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
 }

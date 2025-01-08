@@ -129,9 +129,12 @@
   <div class="succes_container_top">
     <div class="succes_flex">
         <p class="reg_text" id="order_number"></p>
-        <p class="reg_text">Дякую за замовлення ° ͜ʖ ͡.</p>
-        <p class="reg_text">Я зв'яжусь з тобою для оплати</p>
-        <p class="sm_text">привіт податкова :)</p>
+        <p class="reg_text" id="reg_text_space">Дякую за замовлення ° ͜ʖ ͡.</p>
+        <p class="reg_text" id="reg_text_space_sm">Тебе буде перенаправлено на збір</p>
+        <p class="reg_text">1. Вкажи номер замовлення в коментарі</p>
+        <p class="reg_text" id="reg_text_space">2. Задонать потрібну суму</p>
+        <p class="sm_text"></p>
+        <button class="redirect_button" onclick="window.location.replace('https://send.monobank.ua/jar/2he9vdKALw');">Ок!</button>
     </div> 
   </div>
   </div>
@@ -169,13 +172,12 @@
     <input type="hidden" id="number" name="number" value="">
 
     <script type="text/javascript">
-// Створення змінної та присвоєння їй значення
-var randomNumber = Math.floor(Math.random() * 900) + 100; // Генеруємо випадкове число від 100 до 999
+// ну а хулі ти тут хтів бля шоб я тобі учьот кожного замовлення десь обробляв шоб кожне нове по черзі номер свій мало                  пишу сайти 200 грн сторінка
+var randomNumber = Math.floor(Math.random() * 900) + 100;
 
-// Знаходимо елемент input по його id і задаємо значення для value
 document.getElementById('number').value = randomNumber;
 
-console.log(randomNumber); // Вивести значення змінної на консоль
+console.log(randomNumber);
     </script>
 
     <button type="submit">Оформити замовлення</button>

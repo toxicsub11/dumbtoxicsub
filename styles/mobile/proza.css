@@ -38,6 +38,10 @@ a {
     color: white;
 }
 
+a:hover {
+  color: blue;
+}
+
 a img {
   user-select: none;
 }
@@ -217,6 +221,12 @@ p {
   grid-template-columns: repeat(5, 1fr);
 }
 
+.variants-grid_3columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+}
+
 .info_flex_ui {
   margin-bottom: 30px;
 }
@@ -258,4 +268,8 @@ button img {
 .no_stock_mob.true {
   display: block;
   margin-bottom: 30px;
+}
+
+#big_font_less {
+  font-size: 32px;
 }

@@ -115,15 +115,12 @@ a img {
   justify-content: start;
   align-items: end;
   margin-left: 10%;
+  margin-bottom: 60px;
 }
 
 .table_container {
   margin-top: 60px;
   width: 70%;
-}
-
-#table_container_end {
-  margin-bottom: 60px;
 }
 
 .table_holder {
@@ -145,6 +142,10 @@ a img {
 
 .add_margin {
   margin-right: 150px;
+}
+
+.add_margin_plus {
+  margin-right: 350px;
 }
 
 .table_container_big_grid {
@@ -256,4 +257,29 @@ a img {
   color: white;
   font-family: arial;
   font-size: 36px;
+}
+
+#sm_img {
+  width: 50%;
+  height: 50%;
+}
+
+.donation_table p,
+.donation_table a {
+  color: white;
+  font-family: Arial;
+}
+
+.donation_table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table_container_centerleft {
+  margin-top: 60px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }

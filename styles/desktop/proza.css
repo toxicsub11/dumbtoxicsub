@@ -40,6 +40,14 @@ body::-webkit-scrollbar {
     color: transparent;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}
+
 a img {
   user-select: none;
 }
@@ -237,6 +245,12 @@ button[disabled] {
 .variants-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+
+.variants-grid_3columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
 }
 
 .text_container {

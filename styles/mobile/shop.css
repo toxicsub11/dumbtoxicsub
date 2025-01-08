@@ -79,7 +79,7 @@ display: none;
 }
 
 #table_container_start {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 #table_container_end {
@@ -165,7 +165,7 @@ display: none;
 }
 
 .table_container_sm_grid {
-  margin-top: 60px;
+  margin-top: 30px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -176,8 +176,12 @@ display: none;
   margin-right: 150px;
 }
 
+.add_margin_plus {
+  align-self: start;
+}
+
 .table_container_big_grid {
-  margin-top: 60px;
+  margin-top: 30px;
   width: 100%;
   gap: 20px;
   display: grid;
@@ -194,10 +198,49 @@ display: none;
           padding-right: 100px;
         }
 
+        .add_padding_plus {
+          padding-right: px;
+        }
+
         .extra_width {
           width: 145%;
         }
 
 .cart_button {
 
+}
+
+.shop_scroll {
+  margin-bottom: 60px;
+}
+
+#sm_img {
+  width: 70%;
+  height: 70%;
+}
+
+.donation_table p,
+.donation_table a {
+  color: white;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.donation_table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.extra_width_mid {
+  width: 120%;
+}
+
+.table_container_centerleft {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  padding-top: 0;
+  padding-left: 30px;
 }

@@ -17,7 +17,6 @@ event.preventDefault();
     // Запобігаємо відправці форми
 
     // Затримка для виконання всіх дій
-    setTimeout(function() {
         // Очищаємо форму
         document.getElementById('order-form').reset(); // Очищаємо форму
 
@@ -34,7 +33,11 @@ event.preventDefault();
 
                 // Вставляємо порожні значення для прихованих полів
 
-        // Редірект на іншу сторінку
-        window.location.replace("../"); // Замініть на свою адресу
-    }, 4000); // Затримка 3 секунди
+});
+
+const button = document.querySelectorAll('.redirect_button');
+
+button.addEventListener('click', function() {
+    console.log("redirect?");
+  window.location.replace("https://send.monobank.ua/jar/2he9vdKALw");
 });

@@ -163,7 +163,7 @@ input:focus, textarea:focus {
 
 .succes_container_top {
   position: fixed;
-  top: 40%;
+  top: 30%;
 }
 
 .succes_flex {
@@ -230,3 +230,24 @@ input:focus, textarea:focus {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+#reg_text_space {
+  margin-bottom: 40px;
+}
+
+#reg_text_space_sm {
+  margin-bottom: 20px;
+}
+
+.redirect_button {
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.redirect_button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
