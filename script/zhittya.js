@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainImage = document.getElementById('main-product-image');
     let selectedVariant = null; // Спочатку варіант не вибраний
 
-    default_variant.classList.add('selected');
 
     // Вибір варіанту
     variants.forEach(variant => {
@@ -52,10 +51,7 @@ buttons.forEach(button => {
 if (selectedVariant && selectedVariant.name && selectedVariant.image) {
 
         console.log('Button clicked:', event.target);
-        console.log('Button data-product-name:', event.target.dataset.productName);
-        
-        let name = 'Фото Прінт рандом (Мале Життя)';
-        let image = '../../media/shop/content/film/slow_gif.gif';
+        console.log('Button data-product-name:', event.target.dataset.productName);        
 
         if (selectedVariant && selectedVariant.name && selectedVariant.image) {
             name = selectedVariant.name;
