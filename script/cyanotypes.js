@@ -64,7 +64,7 @@ if (selectedVariant && selectedVariant.name && selectedVariant.image && selected
         }
 
         console.log('Додаємо в кошик:', { name, image });
-        addToCartAndToggleElement(identify, name, 50, image); 
+        addToCartAndToggleElement(identify, name, 100, image); 
     } else {
         console.log('варіант не обрано, піздєц :)');
     }
