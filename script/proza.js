@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 buttons.forEach(button => {
     button.addEventListener('click', (event) => {
         console.log('Button clicked:', event.target);
-            addToCartAndToggleElement('проза', 'Проза', 400, '../../media/shop/product/zine.jpg');
+            addToCartAndToggleElement('проза', 'Проза', 500, '../../media/shop/product/zine.jpg');
     });
 });
 });
