@@ -51,12 +51,10 @@ buttons.forEach(button => {
 if (selectedVariant && selectedVariant.name && selectedVariant.image) {
 
         console.log('Button clicked:', event.target);
-        console.log('Button data-product-name:', event.target.dataset.productName);        
-
-        if (selectedVariant && selectedVariant.name && selectedVariant.image) {
+        console.log('Button data-product-name:', selectedVariant.name, selectedVariant.image);        
+ 
             name = selectedVariant.name;
-            image = selectedVariant.image;
-        }
+            const image = selectedVariant.image;
 
         console.log('Додаємо в кошик:', { name, image });
         addToCartAndToggleElement('плівка', name, 50, image);
