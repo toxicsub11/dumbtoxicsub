@@ -127,6 +127,7 @@
                 position: fixed;
                 width: 100%;
                 top: 88%;
+                z-index: 1000;
         }
 
         .side_menu_cart_shop {

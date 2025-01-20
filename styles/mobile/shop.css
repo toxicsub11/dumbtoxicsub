@@ -169,7 +169,7 @@ display: none;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  align-items: start;
 }
 
 .add_margin {
@@ -214,9 +214,9 @@ display: none;
   margin-bottom: 60px;
 }
 
-#sm_img {
+.sm_img {
   width: 70%;
-  height: 70%;
+  height: auto;
 }
 
 .donation_table p,

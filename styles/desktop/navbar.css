@@ -163,7 +163,7 @@
             left: 0;
             background: none;
             padding: 20px;
-            z-index: 0; /* Меню будет поверх всех элементов */
+            z-index: 1000; /* Меню будет поверх всех элементов */
             font-family: Arial, sans-serif;
         }
 
