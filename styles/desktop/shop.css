@@ -265,6 +265,11 @@ a img {
   height: auto;
 }
 
+.mid_img {
+  width: 50%;
+  height: auto;
+}
+
 .donation_table p,
 .donation_table a {
   color: white;
@@ -290,5 +295,11 @@ a img {
 }
 
 #table_container_end {
+  margin-bottom: 60px;
+}
+
+#table_container_end_small {
   margin-bottom: 30px;
+  width: 90%;
+  align-items: start;
 }

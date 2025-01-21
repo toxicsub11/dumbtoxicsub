@@ -160,6 +160,7 @@
             display: flex;
             justify-content: start;
             top: 60%;
+            max-width: 200px; /* або інший підходящий розмір */
             left: 0;
             background: none;
             padding: 20px;
