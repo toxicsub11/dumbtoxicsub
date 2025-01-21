@@ -236,7 +236,7 @@ p {
 }
 
 .desktop_margin {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -272,4 +272,9 @@ button img {
 
 #big_font_less {
   font-size: 32px;
+}
+
+#sm_img {
+  width: 50%;
+  margin-bottom: 20px;
 }
