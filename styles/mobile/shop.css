@@ -244,3 +244,19 @@ display: none;
   padding-top: 0;
   padding-left: 30px;
 }
+
+.mid_img {
+  width: 50%;
+  height: auto;
+  margin-left: 50%;
+}
+
+#table_container_end {
+  margin-bottom: 60px;
+}
+
+#table_container_end_small {
+  margin-bottom: 30px;
+  width: 90%;
+  align-items: start;
+}
