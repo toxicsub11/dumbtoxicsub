@@ -243,20 +243,19 @@ display: none;
   padding: 50px;
   padding-top: 0;
   padding-left: 30px;
+  padding-bottom: 0;
 }
 
-.mid_img {
-  width: 50%;
-  height: auto;
-  margin-left: 50%;
+.mid_img_img {
+display: none;
 }
 
-#table_container_end {
-  margin-bottom: 60px;
+#no_margin {
+  margin: 0;
 }
 
 #table_container_end_small {
   margin-bottom: 30px;
-  width: 90%;
-  align-items: start;
+  width: 100%;
+  align-items: end;
 }
