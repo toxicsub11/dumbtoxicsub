@@ -542,12 +542,25 @@ a img {
     width: 80%;
     padding-left: 20%;
   }
+
+@media screen and (max-width: 520px) {
+.digitalwar_bg {
+  background: url(../../media/main/bg/bg26mob_mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 130%;
+  }
+}
+
+@media screen and (min-width: 520px) {
 .digitalwar_bg {
   background: url(../../media/main/bg/bg26mob.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 130%;
   }
+}
+
 .digitalwar_container_container {
   /*background: url(../media/bg/bg23.png);
   background-repeat: no-repeat;
