@@ -100,7 +100,7 @@ a img {
 /* NAV CONTAINER (MAIN) */
 
   header {
-    background: url(../../media/main/bg/bg4_res_test2.png);
+    background: url(../../media/main/bg/bg4_res.png);
     background-size: 100%;
     background-repeat: no-repeat;
   }
@@ -330,6 +330,20 @@ a img {
 
 .typo_container,
 .typo_container img {
+  width: 100%;
+}
+
+.typo_container_flex_small {
+  width: 90%;
+}
+
+.typo_container_small {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.typo_container_small img {
   width: 100%;
 }
 

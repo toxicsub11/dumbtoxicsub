@@ -47,7 +47,7 @@ a img {
 /* NAV CONTAINER (MAIN) */
 
   header {
-    background: url(../../media/main/bg/bg4_res_test2.png);
+    background: url(../../media/main/bg/bg4_res.png);
     background-size: 200%;
     background-repeat: no-repeat;
   }
@@ -290,6 +290,20 @@ a img {
 #typo_container_mob_image_flip {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.typo_container_flex_small {
+  width: 100%;
+}
+
+.typo_container_small {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.typo_container_small img {
+  width: 100%;
 }
 
 .chuvaky_container {
