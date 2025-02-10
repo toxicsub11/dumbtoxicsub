@@ -76,6 +76,11 @@ a img {
     width: 100%;
 }
 
+.video-background img {
+    z-index: -1;
+    width: 100%;
+}
+
 .frame_placeholder {
   width: 100vw;
   height: 100vh;
