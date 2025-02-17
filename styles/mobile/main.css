@@ -83,6 +83,8 @@ a img {
 .table_content_1 img,
 .table_content_2 img {
   margin-right: 30px;
+  width: 35%;
+  opacity: 0;
 }
 
 .table_container_container {
@@ -143,7 +145,7 @@ a img {
 }
 
 .proza_zine_container {
-  width: 100%;
+  width: 90%;
 }
 
 .proza_zine_container_container {
@@ -220,7 +222,7 @@ a img {
 }
 
   .comp {
-          width: 90%;
+          width: 80%;
           padding: 30px;
           padding-bottom: 30px}
 
@@ -797,4 +799,8 @@ a img {
 
 .footer_flex {
   width: 30%;
+}
+
+.margin_vasya {
+  margin-bottom: 30px;
 }

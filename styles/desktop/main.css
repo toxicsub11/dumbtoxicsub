@@ -119,6 +119,8 @@ a img {
 .table_content_1 img,
 .table_content_2 img {
   margin-right: 30px;
+  width: 15%;
+  opacity: 0;
 }
 
 .table_container_container {
@@ -848,4 +850,8 @@ a img {
 
 .cursor_switch:hover {
   cursor: url('../cursor/blue_size56.png') 16 16, auto;
+}
+
+.margin_vasya {
+  margin-bottom: 40px;
 }
