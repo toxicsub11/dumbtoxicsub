@@ -90,6 +90,7 @@ a img {
 .table_container_container {
   width: 100vw;
   overflow: hidden;
+    display: none;
 }
 
 .heyworld img {
