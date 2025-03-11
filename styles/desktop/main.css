@@ -855,3 +855,24 @@ a img {
 .margin_vasya {
   margin-bottom: 40px;
 }
+
+.image-grid_placeholder {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.image-grid {
+  width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto);  /* 2 rows */
+    gap: 60px; /* 30px margin between images */
+    column-gap: 150px;
+}
+
+.image-grid img {
+    width: 100%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
