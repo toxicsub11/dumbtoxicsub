@@ -876,3 +876,18 @@ a img {
     height: auto; /* Maintain aspect ratio */
     display: block;
 }
+
+.afishy_2_img {
+  width: 100%;
+}
+
+.afishy_2_flex {
+  width: 22%;
+}
+
+.afishy_2_container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
