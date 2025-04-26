@@ -877,17 +877,50 @@ a img {
     display: block;
 }
 
-.afishy_2_img {
+.afishy_2_img,
+.afishy_3_img {
   width: 100%;
 }
 
-.afishy_2_flex {
+.afishy_2_flex,
+.afishy_3_flex {
   width: 22%;
 }
 
-.afishy_2_container {
+.afishy_2_container,
+.afishy_3_container {
   display: flex;
   justify-content: center;
   gap: 60px;
   margin-top: 60px;
+}
+
+.shirt_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.shirt_flex {
+  width: 50%;
+}
+
+.shirt_img {
+  width: 100%;
+}
+
+.youtube_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.youtube_flex {
+  width: 70%;
+}
+
+.iframe_youtube {
+    width: 1400px;
+  height: 600px;
 }

@@ -841,3 +841,40 @@ a img {
   gap: 20px;
   margin-top: 30px;
 }
+
+.afishy_3_img {
+  width: 100%;
+}
+
+.afishy_3_flex {
+  width: 40%;
+}
+
+.afishy_3_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.shirt_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.shirt_flex {
+  width: 50%;
+}
+
+.shirt_img {
+  width: 100%;
+}
+
+.youtube_container {
+  display: none;
+}
+
+#archived {
+  margin-top: 30px;
+}
