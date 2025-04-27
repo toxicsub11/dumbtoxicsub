@@ -882,7 +882,7 @@ a img {
 }
 
 .afishy_2_flex {
-  width: 15%;
+  width: 22%;
 }
 
 .afishy_2_container {
@@ -933,6 +933,10 @@ a img {
 }
 
 .iframe_youtube {
-    width: 1400px;
+    width: 991px;
   height: 600px;
+}
+
+#rishennya_nav {
+  margin-top: 50px;
 }
