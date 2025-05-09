@@ -7,11 +7,16 @@
                     const stopPosition = stopElement.getBoundingClientRect().top + window.scrollY;
 
                     let scrollPosition = window.scrollY;
+                    console.error("ало ало отримали мєню");
 
                     if (scrollPosition >= stopPosition) {
-                        sideMenu.style.opacity = '0';
+                        console.error("ало ало прячєм");
+                        sideMenu.style.display = 'none'
+
                     } else {
-                        sideMenu.style.opacity = '1';
+                        console.error("ало ало флєкс");
+                        sideMenu.style.display = 'flex'
+                        
                     }
                 });
             } else {
