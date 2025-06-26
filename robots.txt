@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /media/navbar
 Disallow: /media/main/footer
 Disallow: /media/main/contact
+Disallow: /media/host
