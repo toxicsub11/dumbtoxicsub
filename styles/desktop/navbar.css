@@ -1,6 +1,14 @@
 /* NAV CONTAINER (MAIN) */
 
 
+.nav_logo {
+    width: 100%;
+}
+
+.nav-logo-container {
+    width: 20%;
+}
+
 .nav_container {
   padding: 10px;
   position: sticky;
